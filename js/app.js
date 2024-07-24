@@ -1,34 +1,73 @@
 document.addEventListener('DOMContentLoaded', function() {
-  (function () {
-  
+    (function () {
+        let floatingGraphics = document.querySelectorAll('.floating-graphics');
 
-let rocketPieces = document.querySelectorAll('.rocket-body span')
+        let rocket = document.querySelector('.robot');
 
-let rocket = document.querySelector('.rocket')
+        let triggerStart = window.innerHeight / 5;
 
-let triggerStart = window.innerHeight / 5;
+        let rocketOffsetTop = rocket.offsetTop;
 
-let rocketOffsetTop = rocket.offsetTop;
+        let thirdOffsetTop = floatingGraphics.length >= 3 ? floatingGraphics[2].offsetTop : null;
 
-let thirdOffsetTop = rocketPieces[2].offsetTop;
+        let fifthOffsetTop = floatingGraphics.length >= 5 ? floatingGraphics[4].offsetTop : null;
 
-document.addEventListener('scroll', (e) => {
-  if(window.scrollY > (rocketOffsetTop - triggerStart)) {
-    rocketPieces[0].classList.add('active');
-    rocketPieces[1].classList.add('active');
-  } else {
-    rocketPieces[0].classList.remove('active');
-    rocketPieces[1].classList.remove('active');
-  }
+        document.addEventListener('scroll', (e) => {
+            let scrollY = window.scrollY;
 
-  if(window.scrollY > (thirdOffsetTop - triggerStart)) {
-    rocketPieces[2].classList.add('active');
-  } else {
-    rocketPieces[2].classList.remove('active');
-  }
-})
+            if (scrollY > (rocketOffsetTop - triggerStart)) {
+                floatingGraphics[0].classList.add('active');
+            } else {
+                floatingGraphics[0].classList.remove('active');
+            }
+
+            if (thirdOffsetTop && scrollY > (thirdOffsetTop - triggerStart)) {
+                floatingGraphics[2].classList.add('active');
+            } else if (floatingGraphics.length >= 3 && floatingGraphics[2]) {
+                floatingGraphics[2].classList.remove('active');
+            }
+
+            if (fifthOffsetTop && scrollY > (fifthOffsetTop - triggerStart)) {
+                floatingGraphics[4].classList.add('active');
+            } else if (floatingGraphics.length >= 5 && floatingGraphics[4]) {
+                floatingGraphics[4].classList.remove('active');
+            }
+        });
+    }());
 
 
-}())
+    let floatingGraphics = document.querySelectorAll('.floating-graphics');
+
+    let triggerStart = window.innerHeight / 5;
+
+    document.addEventListener('scroll', (e) => {
+        let scrollY = window.scrollY;
+
+        floatingGraphics.forEach(function(floatingGraphic) {
+            let floatingGraphicOffsetTop = floatingGraphic.offsetTop;
+
+            if (scrollY > (floatingGraphicOffsetTop - triggerStart)) {
+                floatingGraphic.classList.add('active');
+            } else {
+                floatingGraphic.classList.remove('active');
+            }
+        });
+    });
+
+
+
+    document.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY;
+    let elements = document.querySelectorAll('section.robot .floating-graphics');
+
+    elements.forEach((element) => {
+        let elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        if (scrollPosition > elementPosition - window.innerHeight + 100) {
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
+        }
+    });
+});
 
 });
