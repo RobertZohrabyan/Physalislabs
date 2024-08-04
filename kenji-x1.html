@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="css/small-infographic.css"><!-- Kenji page small infographic -->
     <link rel="stylesheet" href="css/big-infographic.css"><!-- Kenji page big infographic -->
     <link rel="stylesheet" href="css/sliders-and-tabulations.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script><!-- words writing animation on kenji page-->
     <script src="js/script.js"></script>
     <script src="js/text-animation.js"></script><!-- Kenji rewriting animation -->
     <script type="text/javascript" src="js/our-mission.js"></script><!-- Kenji page our mission -->
     <script type="text/javascript" src="js/small-infographic.js"></script><!-- Kenji page our mission -->
     <script type="text/javascript" src="js/big-infographic.js"></script><!-- Kenji page our mission -->
     <script type="text/javascript" src="js/sliders-and-tabulations.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script><!-- words writing animation on kenji page-->
+    <script type="text/javascript" src="js/kenji-page-rewriting-animation.js"></script>
 </head>
 <body>
     <!-- Content goes here -->
@@ -111,7 +112,7 @@
         <div class="main_slider-pre-container">
             <div class="main_slider-pre-content">
                 <div class="main_slider-pre-left-content">
-                    <p>Physalis labs is a reusable, two-stage rocket designed and manufactured by Kenji X 1 for the reliable and safe transport of people and payloads into Earth orbit and beyond.</p>
+                    <p>KenjiX1 Robotics Development Platform can be configured for  Applications: Monitoring (Areal, Indoor/Outdoor, Active Terrain Exploration and Geophysical) Home Automation, (Security and Surveillance) Laboratory Environment, (Test Chambers, Test-Benches) Inspection (Remote, Local, Autonomous) Vertical Farming, (Agriculture) Environmental (Ecology and Animal Observations) Education (Academics).</p>
                 </div>
                 <div class="main_slider-pre-right-content">
                     <div class="main_slider-pre-image-container">
@@ -120,7 +121,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- Main Slider Section -->
         <section class="main_slider section-gallery">
             <div class="main_slider gallery-slider">
@@ -129,27 +129,27 @@
                     <section class="information_block_section">
                         <div class="information_block_left">
                             <div class="information_block_left_content">
-                                <h2>Statistics</h2>
-                                <h4>Kenji X1</h4>
+                                <!-- <h2>Statistics</h2> -->
+                                <h4>Kenji-X1</h4>
                                 <div class="information_block_tabs">
-                                    <div class="information_block_tab" data-tab="0">Tab 1</div>
+                                    <div class="information_block_tab" data-tab="0">Control</div>
                                     <div class="separator"></div>
-                                    <div class="information_block_tab" data-tab="1">Tab 2</div>
+                                    <div class="information_block_tab" data-tab="1">Payload</div>
                                     <div class="separator"></div>
-                                    <div class="information_block_tab" data-tab="2">Tab 3</div>
+                                    <div class="information_block_tab" data-tab="2">Measurement</div>
                                 </div>
                                 <div class="information_block_tab_content" data-content="0">
                                     <div class="information_block_tab_content_text">
-                                        <p>Kenji can carry payload of severalkilograms. It can be measurement equipment, sensors, robotic arms, area mapping devicesand depth cameras. At its core, the platform has been designed having high level of customization in mind. This feature enables Kenji to be used in various areas. The modular design makes it possible to add needed Functionality right away or remove it. Further, enabling access for other developers and scientific groups to develop and add their own API’s and modules to it.</p>
+                                        <p>Kenji can carry payload of several kilograms. It can be measurement equipment, sensors, robotic arms, area mapping devicesand depth cameras. At its core, the platform has been designed having high level of customization in mind. This feature enables Kenji to be used in various areas. The modular design makes it possible to add needed Functionality right away or remove it. Further, enabling access for other developers and scientific groups to develop and add their own API’s and modules to it.</p>
                                     </div>
                                     <div class="information_block_tab_content_table">
                                         <table class="information_block_table">
                                             <tr>
-                                                <td class="left">Link 1</td>
-                                                <td class="right">LOX <span>/ RP-1</span></td>
+                                                <td class="left">Drivetrain</td>
+                                                <td class="right">Brushed DC <span>/ Planetary gearbox</span></td>
                                             </tr>
                                             <tr>
-                                                <td class="left">Link 2</td>
+                                                <td class="left">Voltage</td>
                                                 <td class="right">981 kN <span>/ 220,500 lbf</span></td>
                                             </tr>
                                             <tr>
@@ -426,12 +426,12 @@
                     <div class="information_block_tab_content_table">
                         <table class="information_block_table">
                             <tr>
-                                <td class="left">Link 1</td>
-                                <td class="right">Data 1</td>
+                                <td class="left">Link 3</td>
+                                <td class="right">Data 3</td>
                             </tr>
                             <tr>
-                                <td class="left">Link 2</td>
-                                <td class="right">Data 2</td>
+                                <td class="left">Link 4</td>
+                                <td class="right">Data 4</td>
                             </tr>
                         </table>
                     </div>
@@ -465,7 +465,7 @@
         </div>      
     </section>
                     <!-- Kenji Big infographic section -->
-<section class="kpb_block">
+<section class="big-infographic-height">
     <div class="infographic-section">
         <div class="robot-container">
           <div class="robot">
@@ -477,101 +477,111 @@
             <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-5" data-modal="modal-5">
             <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-6" data-modal="modal-6">
             <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-7" data-modal="modal-7">
+
+
+            <div class="modal" id="modal-1">
+              <!-- Modal content for dot 1 -->
+              <div class="modal-content">
+                  <button class="close-modal">×</button>
+                  <h2>Adjustable Grippers: Grab and Carry Objects</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
+                  <img src="./video/arm_craning_3_small.gif" alt="Image 1">
+              </div>
+            </div>
+            <div class="modal" id="modal-2">
+              <!-- Modal content for dot 2 -->
+              <div class="modal-content">
+                  <button class="close-modal">×</button>
+                  <h2>Offroad Agility</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
+                  <img src="./video/Kenji_X1_3.gif" alt="Image 1">
+              </div>
+            </div>
+            <div class="modal" id="modal-3">
+              <!-- Modal content for dot 3 -->
+              <div class="modal-content">
+                  <button class="close-modal">×</button>
+                  <h2>Robodrive console</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
+                <!--<img src="./images/kenji-x1/" alt="Image 3"> -->
+                <video autoplay muted loop controls>
+                    <source src="./video/video-console.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="modal" id="modal-4">
+              <!-- Modal content for dot 4 -->
+              <!-- <img src="./images/kenji-x1/Kenji-6.jpg" alt="Image 4"> -->
+              <div class="modal-content">
+                  <button class="close-modal">×</button>
+                  <h2>Tracked Drivetrain</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
+                  <img src="./images/kenji-x1/driveterrain.JPG" alt="kenji x1 driveterrain">
+              </div>
+            </div>
+            <div class="modal" id="modal-5">
+              <div class="modal-content">
+                  <button class="close-modal">×</button>
+                  <h2>User-Programmable Movements</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
+                  <!-- <video autoplay muted loop controls>
+                    <source src="./video/video-console.mp4" type="video/mp4">
+                  </video> -->
+                  <img src="./video/Kenji_X1_Greeting_1.gif" alt="kenji x1 driveterrain">
+              </div>
+            </div>
+            <div class="modal" id="modal-6">
+              <!-- Modal content for dot 6 -->
+              <div class="modal-content">
+                  <button class="close-modal">×</button>
+                  <h2>Continuous 360° Rotation Mast</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
+                <!-- <video autoplay muted loop controls>
+                  <source src="./video/Lab_Application_1.gif.mp4" type="video/mp4">
+                </video> -->
+                <img src="./video/tower_rotation_smallsize.gif" alt="kenji_tower_rotation">
+              </div>
+            </div>
+            <div class="modal" id="modal-7">
+              <!-- Modal content for dot 7 -->
+              <div class="modal-content">
+                  <button class="close-modal">×</button>
+                  <h2>High Power Mecha-Arm v.1</h2>
+                  <p>Lorem ipsum dolor sit amet, In vel ultrices ante. elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
+                  <img src="./video/arm_craning_2.gif" alt="arm_craning">
+              </div>
+            </div>
         </div>
         <div class="info-line">
-          <div class="info" data-dot="1"><span>1. Part One</span>
-            <img src="./images/6B6GZK-LogoMakr.png" alt="Logo 1" class="infographic-logo">
-            <p>Falcon 9’s first stage lofts Dragon to orbit. Falcon 9’s first and second stage separate. Second stage accelerates Dragon to orbital velocity.</p>
+          <div class="info" data-dot="1"><span>1. Adaptive Gripper v.1</span>
+            <img src="./images/mecha-arm.png" alt="Logo 1" class="infographic-logo">
+            <p>KenjiX1 manipulators, (Left/Right), multiple degrees of freedom, several kilograms of load craning per arm.</p>
           </div>
-          <div class="info" data-dot="2"><span>2. Part Two</span>
-            <img src="./images/camera.png" alt="Logo 2" class="infographic-logo">
-            <p>Dragon performs delta-velocity orbit raising maneuvers to catch up with the International PhysalisLabs Station.</p>
+          <div class="info" data-dot="2"><span>2. Offroad Agility</span>
+            <img src="./images/offoad.png" alt="Logo 2" class="infographic-logo">
+            <p>It can perform well in both situations outdoors where rough terrain and unpaved roads are expected, but also indoors.</p>
           </div>
-          <div class="info" data-dot="3"><span>3. Part Three</span>
-            <img src="./images/tracking.png" alt="Logo 3" class="infographic-logo">
+          <div class="info" data-dot="3"><span>3. Robodrive console</span>
+            <img src="./images/console.png" alt="Logo 3" class="infographic-logo">
             <p>Dragon separates from Falcon 9’s second stage and performs initial orbit activation and checkouts of propulsion, life support, and thermal control systems.</p>
           </div>
-          <div class="info" data-dot="4"><span>4. Part Four</span>
-            <img src="./images/light.png" alt="Logo 4" class="infographic-logo">
+          <div class="info" data-dot="4"><span>4. Tracked Drivetrain</span>
+            <img src="./images/dc-motor.png" alt="Logo 4" class="infographic-logo">
             <p>Dragon establishes a communication link with the International PhysalisLabs Station and performs its final orbit raising delta-velocity burn.</p>
           </div>
-          <div class="info" data-dot="5"><span>5. Part Five</span>
-            <img src="./images/wifi.png" alt="Logo 5" class="infographic-logo">
+          <div class="info" data-dot="5"><span>5. User-Programmable Movements</span>
+            <img src="./images/user-programmable-movements.png" alt="Logo 5" class="infographic-logo">
             <p>Dragon establishes relative navigation to the International Space Station and arrives along the docking axis, initiating an autonomous approach.</p>
           </div>
-          <div class="info" data-dot="6"><span>6. Part Six</span>
-            <img src="./images/lidar.png" alt="Logo 6" class="infographic-logo">
+          <div class="info" data-dot="6"><span>6. Mast 360° Continuous Rotation</span>
+            <img src="./images/rotation-mast.png" alt="Logo 6" class="infographic-logo">
             <p>Dragon establishes relative navigation to the International Space Station and arrives along the docking axis, initiating an autonomous approach.</p>
           </div>
-          <div class="info" data-dot="7"><span>7. Part Seven</span>
-            <img src="./images/robot-arm.png" alt="Logo 7" class="infographic-logo">
+          <div class="info" data-dot="7"><span>7. Mecha-Arm Manipulators v.1</span>
+            <img src="./images/mecha-arm-7.png" alt="Logo 7" class="infographic-logo">
             <p>Dragon establishes a communication link with the International Space Station and performs its final orbit raising delta-velocity burn.</p>
           </div>
           <!-- Add more info elements -->
-        </div>
-        <div class="modal" id="modal-1">
-          <!-- Modal content for dot 1 -->
-          <div class="modal-content">
-              <h2>Modal Heading</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
-              <img src="./images/kenji-x1/Kenji-8.jpg" alt="Image 1">
-          </div>
-        </div>
-        <div class="modal" id="modal-2">
-          <!-- Modal content for dot 2 -->
-          <div class="modal-content">
-              <h2>Modal Heading</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
-              <img src="./video/tower_rotation_smallsize.gif" alt="Image 1">
-          </div>
-        </div>
-        <div class="modal" id="modal-3">
-          <!-- Modal content for dot 3 -->
-          <div class="modal-content">
-              <h2>Modal Heading</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
-            <!--<img src="./images/kenji-x1/" alt="Image 3"> -->
-            <video autoplay muted loop controls>
-              <source src="./video/Baseboard_video.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="modal" id="modal-4">
-          <!-- Modal content for dot 4 -->
-          <!-- <img src="./images/kenji-x1/Kenji-6.jpg" alt="Image 4"> -->
-          <div class="modal-content">
-              <h2>Modal Heading</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
-              <img src="./images/kenji-x1/Kenji-6.jpg" alt="Image 6">
-          </div>
-        </div>
-        <div class="modal" id="modal-5">
-          <!-- Modal content for dot 5 -->
-          <div class="modal-content">
-              <h2>Modal Heading</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
-              <video autoplay muted loop controls>
-                <source src="./video/video-console.mp4" type="video/mp4">
-              </video>
-          </div>
-        </div>
-        <div class="modal" id="modal-6">
-          <!-- Modal content for dot 6 -->
-          <div class="modal-content">
-              <h2>Modal Heading</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
-            <video autoplay muted loop controls>
-              <source src="./video/Lab_Application_1.gif.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="modal" id="modal-7">
-          <!-- Modal content for dot 7 -->
-          <div class="modal-content">
-              <h2>Modal Heading</h2>
-              <p>Lorem ipsum dolor sit amet, In vel ultrices ante. elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
-              <img src="./images/kenji-x1/Kenji-6.jpg" alt="Your GIF">
-          </div>
         </div>
     </div>
 </section>
@@ -598,27 +608,27 @@
                 <tbody>
                     <tr>
                         <td class="left">Line 1</td>
-                        <td class="right">Every 90 minutes</td>
+                        <td class="right">Data 1</td>
                     </tr>
                     <tr>
                         <td class="left">Line 2</td>
-                        <td class="right">3 - 6 days</td>
+                        <td class="right">Data 2</td>
                     </tr>
                     <tr>
                         <td class="left">Line 3</td>
-                        <td class="right">300 – 500 km</td>
+                        <td class="right">Data 3</td>
                     </tr>
                     <tr>
                         <td class="left">Line 4</td>
-                        <td class="right">2 - 4 passengers</td>
+                        <td class="right">Data 4</td>
                     </tr>
                     <tr>
                         <td class="left">Line 5</td>
-                        <td class="right">46” diameter / 360° views</td>
+                        <td class="right">Data 5</td>
                     </tr>
                     <tr>
                         <td class="left">Line 6</td>
-                        <td class="right">Up to 192 kg cargo<br /> <span>Power/Data/</span></td>
+                        <td class="right">Data 6<br /> <span>Data/Data /6/</span></td>
                     </tr>
                 </tbody>
             </table> 
@@ -627,58 +637,28 @@
             <table>
                 <tbody>
                     <tr>
-                        <td class="left">MISSION DURATION</td>
-                        <td class="right">7 days</td>
+                        <td class="left">Line 7</td>
+                        <td class="right">Data 7</td>
                     </tr>
                     <tr>
-                        <td class="left">MISSION DURATION</td>
-                        <td class="right">8 - 12 days</td>
+                        <td class="left">Line 8</td>
+                        <td class="right">Data 8</td>
                     </tr>
                     <tr>
-                        <td class="left">ALTITUDE</td>
-                        <td class="right">500 – 700 km</td>
+                        <td class="left">Line 9</td>
+                        <td class="right">Data 9</td>
                     </tr>
                     <tr>
-                        <td class="left">SEATING</td>
-                        <td class="right">2 - 4 passengers</td>
+                        <td class="left">Line 10</td>
+                        <td class="right">Data 10</td>
                     </tr>
                     <tr>
-                        <td class="left">CUPOLA</td>
-                        <td class="right">46” diameter / 360° views</td>
+                        <td class="left">Line 11</td>
+                        <td class="right">Data 11</td>
                     </tr>
                     <tr>
-                        <td class="left">CARGO / SCIENCE</td>
-                        <td class="right">Up to 192 kg cargo<br /> <span>Power/Data/</span></td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-            <div class="tab">
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="left">table 3</td>
-                        <td class="right">Muster</td>
-                    </tr>
-                    <tr>
-                        <td class="left">MISSION DURATION</td>
-                        <td class="right">3 - 6 days</td>
-                    </tr>
-                    <tr>
-                        <td class="left">ALTITUDE</td>
-                        <td class="right">300 – 500 km</td>
-                    </tr>
-                    <tr>
-                        <td class="left">SEATING</td>
-                        <td class="right">2 - 4 passengers</td>
-                    </tr>
-                    <tr>
-                        <td class="left">CUPOLA</td>
-                        <td class="right">46” diameter / 360° views</td>
-                    </tr>
-                    <tr>
-                        <td class="left">CARGO / SCIENCE</td>
-                        <td class="right">Up to 192 kg cargo<br /> <span>Power/Data/</span></td>
+                        <td class="left">Line 12</td>
+                        <td class="right">Data 12<br /> <span>Data/Data 12/</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -687,16 +667,46 @@
             <table>
                 <tbody>
                     <tr>
-                        <td class="left">Table 4</td>
-                        <td class="right">Line Friends</td>
+                        <td class="left">Line 13</td>
+                        <td class="right">Data 13</td>
                     </tr>
                     <tr>
-                        <td class="left">MISSION DURATION</td>
-                        <td class="right">3 - 6 days</td>
+                        <td class="left">Line 14</td>
+                        <td class="right">Data 14</td>
                     </tr>
                     <tr>
-                        <td class="left">ALTITUDE</td>
-                        <td class="right">300 – 500 km</td>
+                        <td class="left">Line 15</td>
+                        <td class="right">Data 15</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Line 16</td>
+                        <td class="right">Data 16</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Line 17</td>
+                        <td class="right">Data  / Data 17</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Line 18</td>
+                        <td class="right">Data <br /> <span>Data/Data 18</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="tab">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="left">Line 19</td>
+                        <td class="right">Data 19</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Line 20</td>
+                        <td class="right">Data 20</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Line 21</td>
+                        <td class="right">Data 21</td>
                     </tr>
                 </tbody>
             </table>
@@ -741,7 +751,6 @@
             </div>
         </div>
     </section>
-    
                     <!-- Footer two -->             
     <section class="footer-two animation-2">
         <div class="footer-two-inner">
