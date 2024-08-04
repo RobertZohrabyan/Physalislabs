@@ -3,30 +3,35 @@ body {
   font-family: 'Familjen Grotesk', sans-serif;
 }
 
+.big-infographic-height {
+  min-height: 87vh;
+  height: auto !important;
+}
+
 .infographic-section {
   position: relative;
-  height: 150vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid green;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .robot-container {
     position: relative;
-    background-image: url(../images/Kenji-drivedown.png);
-    background-size: 140%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 450px;
-    height: 450px;
-    border: 1px solid green;
     margin: 0 auto;
 }
+
 .robot {
   position: relative;
-  border: 1px solid green;
+  background-image: url(../images/kenji-x1/Kenji-5.jpg);
+  background-size: 140%;
+  height: 450px;
+  width: 450px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .cogwheel {
@@ -53,8 +58,8 @@ body {
 
 /* Adjust cogwheel positions */
 .cogwheel-1 {
-  top: 365px;
-  left: 90px;
+  top: 290px;
+  left: 105px;
 }
 
 .cogwheel-2 {
@@ -73,31 +78,25 @@ body {
 }
 
 .cogwheel-5 {
-  top: 150px;
-  left: 200px;
+  top: 230px;
+  left: 140px;
 }
 
 .cogwheel-6 {
-  top: 210px;
-  left: 190px;
+  top: 128px;
+  left: 260px;
 }
 
 .cogwheel-7 {
-  top: 340px;
-  left: 320px;
+  top: 346px;
+  left: 309px;
 }
 
 .info-line {
   text-align: center;
-  position: relative;
-  border: 1px solid green;
+  flex-wrap: wrap;
   display: flex;
-  width: 100%;
-  height: 20vh;
-  margin-top: 500px;
-   position: absolute;
-  top: 0;
-  left: -80px;
+  justify-content: center;  
 }
 
 .info {
@@ -115,6 +114,10 @@ body {
   text-align: left;
   color: #fff;
   position: relative;
+}
+
+.info .active {
+  display: block !important;
 }
 
 .info:hover {
@@ -224,38 +227,38 @@ body {
 
 /* Adjust modal positions */
 #modal-1 {
-  left: -300px;
-  top: 100px;
+  left: -255px;;
+  top: 10px;
 }
 
 #modal-2 {
-  left: -300px;
-  top: 100px;
+  left: -255px;;
+  top: 10px;
 }
 
 #modal-3 {
-  left: -300px;
-  top: 100px;
+  left: -255px;;
+  top: 10px;
 }
 
 #modal-4 {
-  right: -350px;
-  top: 50px;
+  right: -255px;
+  top: 10px;
 }
 
 #modal-5 {
-  right: -350px;
-  top: 50px;
+  right: -255px;
+  top: 10px;
 }
 
 #modal-6 {
-  right: -350px;
-  top: 50px;
+  right: -255px;
+  top: 10px;
 }
 
 #modal-7 {
-  right: -350px;
-  top: 50px;
+  right: -255px;
+  top: 10px;
 }
 
 .modal-content {
@@ -288,4 +291,72 @@ body {
 
 .modal-content video {
   max-height: 300px;
+}
+
+/*modal close button */
+.close-modal {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+    width: 450px;
+  }
+
+  .close-modal {
+    display: block;
+  }
+
+  .info p {
+    display: none;
+  }
+
+  .info .active {
+    display: none !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .modal {
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+    width: 450px;
+  }
+
+  .close-modal {
+    display: block;
+  }
+
+  .info p {
+    display: none;
+  }
+
+  .info .active {
+    display: none !important;
+  }  
+}
+
+
+@media (max-width: 1200px) {
+  .big-infographic-height {
+    min-height: 100vh;
+    height: auto !important;
+  }
 }
