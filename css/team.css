@@ -2,7 +2,7 @@
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	background: radial-gradient(#281c3e,#0f051d);
+    /*background: radial-gradient(#281c3e,#0f051d);*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -28,17 +28,12 @@
 	border-radius: 15px;
 	margin-bottom: 15px;
 }
-/*.center h1{
-	color: #fff;
-	font-size: 4rem;
-	text-align: center;
-}*/
 
 .box{
     min-width: 200px;
     max-width: 250px;
 	padding: 16px;
-	background: #1b1229;
+    border: 1px solid #fff;
 	border-radius: 15px;
 	transition: all .38s ease;
 }

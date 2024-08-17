@@ -59,6 +59,7 @@ section {
 	font-weight: 300;
 	animation: fadeInUp 0.5s ease-in-out;
 	animation-fill-mode: both; 
+	color: #fff;
 }
 
 .section-inner h2 {
@@ -67,6 +68,7 @@ section {
 	margin-bottom: 20px;
 	animation: fadeInUp 0.5s ease-in-out 0.2s;
 	animation-fill-mode: both; 
+	color: #fff;
 }
 
 .section-inner h1 {
@@ -78,22 +80,77 @@ section {
 	animation: fadeInUp 0.5s ease-in-out 0.4s;
 	animation-fill-mode: both; 
 }
+/* Block with tables in index page */
+.section-table-table {
+    border-collapse: collapse;
+    width: 200%;
+    margin-top: 20px;
+}
+
+.section-table-table td {
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    color: #fff; /* Text color */
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.section-table-table span {
+    font-weight: normal;
+    font-size: 14px;
+    color: #979797; /* Light grey for secondary text */
+}
+
+.left {
+    text-align: left; 
+    padding-left: 0;
+}
+
+.right {
+    text-align: right;
+    padding-right: 0; 
+}
+
+/* Section Block Table Styles */
+.section-table-a {
+	background-image: url('../images/torch/User_Library_honeycomb_3_2024_Jun_18_07_00_25PM_000_CustomizedView26194565777.png');
+} 
+
+.section-table-b {
+	background-image: url('../images/3.jpg');
+} 
+
+.section-table-c {
+	background-image: url('../images/3.jpg');
+} 
+
+.section-table-d {
+	background-image: url('../images/3.jpg');
+} 
+
+.section-table-e {
+	background-image: url('../images/3.jpg');
+} 
+
+.section-table-f {
+    background-image: url('../images/3.jpg');
+}
+/* Block with tables in index page END*/
 	/* Background images */
 		/* Section A */
 .section-a {
-	background-image: url('../images/kenji-x1/Baseboard_opened_Image_1.png');
+	background-image: url('../images/torch/TORCH_Mastcam_Render.png');
 }
 
 .section-b {
-	background-image: url('../images/kenji-x1/Kenji-6.jpg');
+	background-image: url('../images/kenji-x1/2.png');
 }
 
 .section-c {
-	background-image: url('../images/kenji-x1/Kenji-13.jpg');
+	background-image: url('../images/geo-lab/Physalis_GEO.Lab_CAD.png');
 }
 
 .section-d {
-	background-image: url('../images/kenji-x1/Kenji-9.jpg');
+	background-image: url('../images/torch/Left_Mecha_Arm_version1a.png');
 }
 
 .section-e {
@@ -104,8 +161,8 @@ section {
 	background-image: url('../images/kenji-x1/Kenji-10.jpg');
 }
 
-.section-g {
-	background-image: url('../images/kenji-x1/.jpg');  /* Suppliers */
+.section-k {
+	background-image: url('../images/kenji-x1/Kenji-9.jpg');
 }
 
 .section-h {
@@ -119,6 +176,28 @@ section {
 .section-j {
     background-image: url('../images/.jpg'); 
     margin-top: 200px; 
+}
+
+.block_color_black h1, 
+.block_color_black h2, 
+.block_color_black h3, 
+.block_color_black h4, 
+.block_color_black h5, 
+.block_color_black h6 {
+    color: #000 !important;
+}
+
+.block_color_black .btn {
+    border-color: #000;
+    color: #000;
+}
+
+.block_color_black .btn .hover {
+    background-color: #000;
+}
+
+.block_color_black .btn:hover span {
+    color: #fff;
 }
 
 .btn {
@@ -219,18 +298,18 @@ section {
 	flex-direction: column;
 	align-items: end;
 	justify-content: center;
-	padding: 50px;
+    padding: 30px; /*padding: 50px;*/
 	width: 100%;
 }
 
 .mobile-main-menu ul li {
-	margin-bottom: 20px;
+    margin-bottom: 10px;/*margin-bottom: 20px;*/
 	font-size: 18px;
 	text-transform: uppercase;
 	border-bottom: 1px #555 dotted;
 	width: 100%;
 	text-align: right;
-	padding-bottom: 8px;
+	padding-bottom: 8px;/*padding-bottom: 8px;*/
 }
 
 .mobile-main-menu ul li a {
@@ -252,7 +331,11 @@ section {
 }
 
 .bg-torch {
-	background-image: url('../images/kenji-x1/torch.png');
+	background-image: url('../images/torch/TORCH_gen1_v251_A13.png');
+}
+
+.bg-robodrive {
+	background-image: url('../images/kenji-x1/plata.PNG');
 }
 
 .bg-team {
@@ -313,6 +396,16 @@ section {
     height: calc(100vh - 100px);
     background-color: black;
     transition: 0.3s;
+}
+
+.doc_thumbnail_img {
+    width: 250px;
+}
+
+.doc_image_together img {
+   width: 45% !important;
+   display: inline-block !important; 
+   margin-right: 3% !important;
 }
 
 /* Documentation Hamburger Menu Styles */
@@ -1300,7 +1393,7 @@ a {
 /* Media queries */
 @media only screen and (max-width: 400px) {
   .our_suppliers_section {
-  	height: 50vh;
+  	height: 67vh;/*height: 50vh;*/
   }	
 
   .our_suppliers_logo_row {
@@ -1359,4 +1452,43 @@ a {
     height: auto;
     margin: 10px;
   }
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Styles for blocks in index page with tables */
+@media (max-width: 960px) {
+    .section-table-table {
+        width: 150%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-table-table {
+        width: 120%;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-table-table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-table-table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .section-table-table {
+        width: 100%;
+    }
 }

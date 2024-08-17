@@ -32,6 +32,7 @@ body {
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     text-transform: none;
     display: none;
+    text-align: justify;
 }
 
 .main_slider-pre-image-container {
@@ -71,7 +72,7 @@ body {
 
 .main_slider.main_slider_slide-controls-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -126,7 +127,6 @@ body {
     position: relative;
     display: flex; 
     height: 100vh;
-    border: 1px solid green;
 }
 
 .information_block_right {
@@ -142,11 +142,18 @@ body {
 }
 
 .information_block_right img {
-    width: 50%; 
+    /*width: 50%; 
     height: auto;
     position: absolute;
     bottom: 50%;
     right: 3%;
+    transform: translateY(50%);*/
+
+    width: 40%;
+    height: auto;
+    position: absolute;
+    bottom: 55%;
+    right: 15%;
     transform: translateY(50%);
 }
 
@@ -426,7 +433,6 @@ body {
 .section-gallery {
     position: relative;
     overflow: hidden;
-    border: 1px solid green;
 }
 
 .gallery-slider {

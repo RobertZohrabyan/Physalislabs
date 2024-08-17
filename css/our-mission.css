@@ -16,9 +16,8 @@ body {
 /* Styles for the mission block section */
 .kenji_mission_block_section {
     position: relative;
-    height: 130vh;
+    height: 100vh;
     overflow: hidden;
-    border: 1px solid green;
 }
 
 /* Styles for the left side of the mission block */
