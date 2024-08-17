@@ -128,6 +128,17 @@ section {
 .small_infographic_geo_lab .callout-three { top: -90px; left: -128px;}
 .small_infographic_geo_lab .callout-four { top: 120px; right: -1020px;}*/
 
+/* Torch dot positions */
+.small_infographic_torch .kenjix1_point_dot.left-1 { display: block; top: 75%; left: 30%; }
+.small_infographic_torch .kenjix1_point_dot.left-2 { display: block; top: 50%; left: 26%; }
+.small_infographic_torch .kenjix1_point_dot.left-3 { display: block; top: 13%; left: 63%; }
+.small_infographic_torch .kenjix1_point_dot.left-4 { display: block; top: 33%; right: 37%; }
+.small_infographic_torch .kenjix1_point_dot.right-1 { display: block; top: 48%; right: 50%;  }
+.small_infographic_torch .kenjix1_point_dot.right-2 { display: block; top: 34%; right: 51%; }
+.small_infographic_torch .kenjix1_point_dot.right-3 { display: block; bottom: 18.17%; right: 32.5%; }
+.small_infographic_torch .kenjix1_point_dot.right-4 { display: block; top: 25%; left: 40%;  }
+.small_infographic_torch .kenjix1_point_dot.right-5 { display: block; top: 50%; right: 28.8%; }
+
 /* Callout styles */
 .kenjix1_point_dot {
     display: none;
