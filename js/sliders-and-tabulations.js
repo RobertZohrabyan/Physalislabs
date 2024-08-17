@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const rect = sliderSection.getBoundingClientRect();
             const progress = -rect.top / (rect.height - window.innerHeight);
 
-            if (rect.top < 300) {
+            if (rect.top < 250 && parseInt(document.documentElement.scrollTop) < 1500) {
                 imageContainer.style.display = 'block';
                 leftContent.style.display = 'block';
                 leftContent.style.top = `${rect.top + 500}px`;
