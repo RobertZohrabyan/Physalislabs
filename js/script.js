@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM fully loaded and parsed');
 
     const btn = document.getElementById('menu-btn');
     const overlay = document.getElementById('overlay');
@@ -95,16 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('hide'); // Optionally show the main header when scrolling up
         }
         lastScroll = scrollPosition();
-    });
-
-    /* width is not enough*/
-    var typed = new Typed(".skills", {
-        strings: ["TeleRobotics Engineering", "Robotics Development", "Robodrive"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 100,
-        loop: true
-    });
+    });   
 
     /* Gallery */
     // JavaScript to handle gallery slider functionality
