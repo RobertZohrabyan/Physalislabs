@@ -2,7 +2,7 @@
 
 /* Example positioning for callouts */
 .callout-one {
-    top: 310px;
+    top: 260px;
     left: -290px;
 }
 
@@ -127,10 +127,10 @@ section {
 }
 
 .kenji_x1_image-container.small_infographic_kenji {
-    background-image: url('../images/Kenji-infographic.png');
+    background-image: url('../images/torch/kenji_small-Infographic.png');
 }
 
-.kenji_x1_image-container.small_infographic_geo_lab {
+/*.kenji_x1_image-container.small_infographic_geo_lab {
     background-image: url('../images/geo-lab/Geo_Lab_Platform_v2_A1.png');
 }
 
@@ -140,9 +140,9 @@ section {
 
 .kenji_x1_image-container.small_infographic_robodrive {
     background-image: url('../images/kenji-x1/croped-plata.PNG');
-}
+}*/
 /* Kenji dot positions */
-.small_infographic_kenji .kenjix1_point_dot.left-1 { display: block; top: 75%; left: 30%; }
+.small_infographic_kenji .kenjix1_point_dot.left-1 { display: block; top: 70%; left: 28%; }
 .small_infographic_kenji .kenjix1_point_dot.left-2 { display: block; top: 50%; left: 26%; }
 .small_infographic_kenji .kenjix1_point_dot.left-3 { display: block; top: 13%; left: 63%; }
 .small_infographic_kenji .kenjix1_point_dot.left-4 { display: block; top: 33%; right: 37%; }
