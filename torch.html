@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/sliders-and-tabulations.css">
-    <link rel="stylesheet" href="css/small-infographic.css">
-    <link rel="stylesheet" href="css/big-infographic.css">
+    <link rel="stylesheet" href="css/small-infographic-torch.css">
+    <link rel="stylesheet" href="css/big-infographic-torch.css">
     <link rel="stylesheet" href="css/our-mission.css">
     <script src="js/script.js"></script>
     <script type="text/javascript" src="js/sliders-and-tabulations.js"></script>
-    <script type="text/javascript" src="js/small-infographic.js"></script>
+    <script type="text/javascript" src="js/small-infographic-torch.js"></script>
     <script type="text/javascript" src="js/our-mission.js"></script>
-    <script type="text/javascript" src="js/big-infographic.js"></script>
+    <script type="text/javascript" src="js/small-infographic-robodrive.js"></script>
     <script type="text/javascript" src="js/separate-tabulation-block.js"></script>
+    <script type="text/javascript" src="js/big-infographic-torch.js"></script>
 </head>
 <body>
     <!-- Content goes here -->
@@ -565,60 +566,76 @@
             </div>
         </section>
     </section> 
-                <!-- Kenji small infographic section -->
-    <div class="kenji_x1_image-container small_infographic_torch">
-    <!-- <img src="./images/Kenji-drivedown.png" alt="Kenji Image"> -->
-    <!-- Callouts -->
-    <div class="kenjix1_point_dots_callouts">
-        <div class="kenjix1_point_dot_callout default-active callout-one" data-callout="one">
-            <h3>Tracked Drivetrain</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor quam eu placerat porta.</p>
-        </div>
-        <div class="kenjix1_point_dot_callout callout-two" data-callout="two">
-            <h3>Mecha-Arm V.1</h3>
-            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-        </div>
-        <div class="kenjix1_point_dot_callout callout-three" data-callout="three">
-            <h3>Sensors</h3>
-            <p>Vestibulum id nunc sapien. Donec est mi, pellentesque ut urna eu, faucibus commodo elit.</p>
-        </div>
-        <div class="kenjix1_point_dot_callout callout-four" data-callout="four">
-            <h3>Payload</h3>
-            <p>Mauris non facilisis risus, porta placerat augue. Interdum et malesuada fames ac ante ipsum primis.</p>
-        </div>
-        <div class="kenjix1_point_dot_callout callout-five" data-callout="five">
-            <h3>Wireless Radio</h3>
-            <p>in faucibus. Vestibulum sodales augue porta, tincidunt tortor eget, bibendum arcu. Maecenas ultricies velit nec nisl consectetur accumsan.</p>
-        </div>
-        <div class="kenjix1_point_dot_callout callout-six" data-callout="six">
-            <h3>Wireless Radio</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
-        </div>
-        <div class="kenjix1_point_dot_callout callout-seven" data-callout="seven">
-            <h3>Robodrive engine</h3>
-            <p>Sed eu massa tortor. Nullam eu risus scelerisque, fermentum odio sed, laoreet orci. Aliquam erat volutpat.</p>
-        </div>
-        <div class="kenjix1_point_dot_callout callout-eight" data-callout="eight">
-            <h3>Maping Equipment</h3>
-            <p>Vivamus malesuada dignissim mauris, sed congue est ultrices quis. Praesent dictum in est ac convallis.</p>
-        </div>
-        <div class="kenjix1_point_dot_callout callout-nine" data-callout="nine">
-            <h3>Heading 9</h3>
-            <p>varius ut, iaculis id diam. Proin porttitor turpis nec metus dignissim mollis. Etiam at tellus iaculis tellus mattis iaculis eget nec elit.</p>
-        </div>
-    </div>
-    <!-- Dots -->
-        <div class="kenjix1_point_dot activated default-active is-small left-1" data-callout="one"><div class="pulse-animation"></div></div>
-        <div class="kenjix1_point_dot is-small left-2" data-callout="two"><div class="pulse-animation"></div></div>
-        <div class="kenjix1_point_dot is-small left-3" data-callout="three"><div class="pulse-animation"></div></div>
-        <!-- <div class="kenjix1_point_dot is-small left-4" data-callout="nine"><div class="pulse-animation"></div></div> -->
-        <!-- <div class="kenjix1_point_dot is-small right-1" data-callout="four"><div class="pulse-animation"></div></div> -->
-        <div class="kenjix1_point_dot is-small right-2" data-callout="five"><div class="pulse-animation"></div></div>
-        <div class="kenjix1_point_dot is-small right-3" data-callout="six"><div class="pulse-animation"></div></div>
-        <div class="kenjix1_point_dot is-small right-4" data-callout="seven"><div class="pulse-animation"></div></div>
-        <!-- <div class="kenjix1_point_dot is-small right-5" data-callout="eight"><div class="pulse-animation"></div></div> -->
-    </div>
-
+          <div class="kenji_x1_image-container small_infographic_kenji">
+         <!-- <img src="./images/Kenji-drivedown.png" alt="Kenji Image"> -->
+         <!-- Callouts -->
+         <div class="kenjix1_point_dots_callouts">
+            <div class="kenjix1_point_dot_callout default-active callout-one" data-callout="one">
+               <h3>Technical Claw</h3>
+               <p>The 3-D printed helmet with customized padding houses microphones for communication and valves that regulate the suit’s pressure systems.</p>
+            </div>
+            <div class="kenjix1_point_dot_callout callout-two" data-callout="two">
+               <h3>Tracked Drivetrain</h3>
+               <p>Physalis Geo-Lab can carry payload of several kilograms. It can be measurement equipment, sensors, robotic arms, area mapping devices and depth cameras.</p>
+            </div>
+            <div class="kenjix1_point_dot_callout callout-three" data-callout="three">
+               <h3>Wireless Communication Antenna</h3>
+               <p>The gloves are designed for easy use when the suit is pressurized and with the ability to operate Dragon’s touchscreens.</p>
+            </div>
+            <div class="kenjix1_point_dot_callout callout-four" data-callout="four">
+               <h3>Flame-resistant Materials</h3>
+               <p>The space suit’s outer layer is made with flame-resistant materials. Gray parts are different versions of Nomex and the white material is a Teflon fabric.</p>
+            </div>
+            <div class="kenjix1_point_dot_callout callout-five" data-callout="five">
+               <h3>Night Light</h3>
+               <p>Designed to provide a large field of view and rotates open.</p>
+            </div>
+            <div class="kenjix1_point_dot_callout callout-six" data-callout="six">
+               <h3>TOF LIDAR 1KHZ</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
+            </div>
+            <div class="kenjix1_point_dot_callout callout-seven" data-callout="seven">
+               <h3>Vibration Sensors</h3>
+               <p>Equipped with advanced sensors to monitor environmental conditions and provide real-time data.</p>
+            </div>
+            <div class="kenjix1_point_dot_callout callout-eight" data-callout="eight">
+               <h3>Payload</h3>
+               <p>Features energy-efficient systems that ensure long-duration operation with minimal power consumption.</p>
+            </div>
+            <div class="kenjix1_point_dot_callout callout-nine" data-callout="nine">
+               <h3>Nylon Tracks</h3>
+               <p>Integrated high-resolution cameras for detailed imaging and video recording.</p>
+            </div>
+         </div>
+         <!-- Dots -->
+         <div class="kenjix1_point_dot activated default-active is-small left-1" data-callout="one">
+            <div class="pulse-animation"></div>
+         </div>
+         <div class="kenjix1_point_dot is-small left-2" data-callout="two">
+            <div class="pulse-animation"></div>
+         </div>
+         <div class="kenjix1_point_dot is-small left-3" data-callout="three">
+            <div class="pulse-animation"></div>
+         </div>
+         <div class="kenjix1_point_dot is-small left-4" data-callout="nine">
+            <div class="pulse-animation"></div>
+         </div>
+         <div class="kenjix1_point_dot is-small right-1" data-callout="four">
+            <div class="pulse-animation"></div>
+         </div>
+         <div class="kenjix1_point_dot is-small right-2" data-callout="five">
+            <div class="pulse-animation"></div>
+         </div>
+         <div class="kenjix1_point_dot is-small right-3" data-callout="six">
+            <div class="pulse-animation"></div>
+         </div>
+         <div class="kenjix1_point_dot is-small right-4" data-callout="seven">
+            <div class="pulse-animation"></div>
+         </div>
+         <div class="kenjix1_point_dot is-small right-5" data-callout="eight">
+            <div class="pulse-animation"></div>
+         </div>
+      </div>
 
 
 
