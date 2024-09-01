@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/sliders-and-tabulations.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
     <script src="js/script.js"></script>
     <script type="text/javascript" src="js/sliders-and-tabulations.js"></script>
     <script type="text/javascript" src="js/team-slider-accordion.js"></script>
@@ -229,6 +231,38 @@
             </div>
         </div>
     </section> -->
+    <!-- TRUSTED -->
+    <section class="trusted tehnology_used">
+        <h1>Technologies</h1>
+        <div class="swiper trustSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- Slide 1 -->
+                    <img src="./images/partner-logo-1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <!-- Slide 2 -->
+                    <img src="./images/partner-logo-2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <!-- Slide 3 -->
+                    <img src="./images/partner-logo-3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <!-- Slide 4 -->
+                    <img src="./images/partner-logo-4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <!-- Slide 5 -->
+                    <img src="./images/partner-logo-5.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <!-- Slide 6 -->
+                    <img src="./images/partner-logo-6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer two -->             
     <section class="footer-two footer-two-version-two">
         <div class="footer-two-inner">
@@ -240,7 +274,7 @@
                 <div class="footer-two-content">
                     <a class="btn special" role="button" tabindex="0" href="./documents/" target="_blank">
                         <div class="hover"></div>
-                        <span class="text">Career</span>
+                        <span class="text">Ready for more?</span>
                     </a>
                 </div>
             </div>
@@ -259,6 +293,34 @@
             <li><a href="suppliers.html">Suppliers</a></li>
         <ul>
     </footer>
-
+    <!-- Swiper Slider JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script>
+    //TRYSTED BYE SWIPER SLDIER
+    var swiper = new Swiper('.trustSwiper', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: true,
+        breakpoints: {
+            1400:{
+                slidesPerView: 5,
+                spaceBetween: 30,
+            },
+            1200:{
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1000:{
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            0:{
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
+    </script>
 </body>
 </html>
