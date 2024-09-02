@@ -112,11 +112,11 @@ section {
 
 /* Section Block Table Styles */
 .section-table-a {
-	background-image: url('../images/torch/User_Library_honeycomb_3_2024_Jun_18_07_00_25PM_000_CustomizedView26194565777.png');
+	background-image: url('../images/torch/Kenji_X1_Model v225_3 (2).png');
 } 
 
 .section-table-b {
-	background-image: url('../images/3.jpg');
+	background-image: url('../images/torch/Kenji_X1_Model v225_3 (2).png');
 } 
 
 .section-table-c {
@@ -138,7 +138,7 @@ section {
 	/* Background images */
 		/* Section A */
 .section-a {
-	background-image: url('../images/torch/TORCH_Mastcam_Render.png');
+	background-image: url('../images/torch/TORCH_Mastcam_Render (2).png');
 }
 
 .section-b {
@@ -331,11 +331,15 @@ section {
 }
 
 .bg-torch {
-	background-image: url('../images/torch/TORCH_gen1_v251_A13.png');
+	background-image: url('../images/torch/TORCH_gen2_Render_A20.png');
 }
 
 .bg-robodrive {
 	background-image: url('../images/kenji-x1/plata.PNG');
+}
+
+.bg-mecha-arm {
+	background-image: url('../images/torch/Left_Mecha_Arm_v1_1.png');
 }
 
 .bg-team {
@@ -400,6 +404,8 @@ section {
 
 .doc_thumbnail_img {
     width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .doc_image_together img {
@@ -407,6 +413,14 @@ section {
    display: inline-block !important; 
    margin-right: 3% !important;
 }
+/* Documentation Footer */
+footer {
+  padding: 30px;
+  text-align: center;
+  color: #888;
+}
+
+
 
 /* Documentation Hamburger Menu Styles */
 .doc-hamburger {
@@ -544,7 +558,7 @@ code {
     }
 
     #techdoc_navbar {
-        left: -300px;
+        left: -400px;
     }
 
     #techdoc_navbar.doc-show-menu {
