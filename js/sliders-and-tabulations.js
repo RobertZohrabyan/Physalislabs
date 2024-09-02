@@ -69,8 +69,8 @@ function initMainSlider() {
 
     if (slider.classList.contains('geo-lab-slider')) {
         slideImages = {
-            0: { 0: './images/geo-lab/IMG_0191.JPG', 1: './video/Alex_diagn.gif', 2: './images/geo-lab/DSC_0744.JPG' },
-            1: { 0: './video/COVC7357.MP4', 1: './images/geo-lab/IMG_0776.JPG', 2: './images/geo-lab/IMG_0373.JPG' },
+            0: { 0: './images/geo-lab/1024x1024.PNG', 1: './video/Alex_diagn.gif', 2: './images/geo-lab/DSC_0750.JPG' },
+            1: { 0: './video/geo-lab-gif-slide-2.gif', 1: './images/geo-lab/IMG_0776.JPG', 2: './images/geo-lab/IMG_0373.JPG' },
             2: { 0: './images/geo-lab/Vibrations_2.bmp', 1: './images/geo-lab/Vibrations_3.bmp', 2: './images/geo-lab/Vibrations_1.bmp' },
             // 3: { 0: './images/geo-lab/DSC_0750.JPG', 1: './images/geo-lab/DSC_0754.JPG', 2: './images/geo-lab/DSC_0755.JPG' },
             // 4: { 0: './images/geo-lab/DSC_0751.JPG', 1: './images/geo-lab/DSC_0744.JPG', 2: './images/geo-lab/DSC_0754.JPG' },
@@ -80,18 +80,19 @@ function initMainSlider() {
 
     if (slider.classList.contains('torch-slider')) {
         slideImages = {
-            0: { 0: './images/torch/Left_Mecha_Arm_version2.png', 1: './images/torch/Left_Mecha_Arm_version5.png', 2: './images/torch/Left_Mecha_Arm_version7.png' },
-            1: { 0: './images/torch/Kenji_X1_Model v225_3 (2).png', 1: './images/torch/Kenji_X1_Model v225_2.png', 2: './images/torch/Torch_CAD_mODEL_pRE_fINAL.PNG' },
-            2: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
-            3: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
-            4: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
-            5: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' }
+            0: { 0: './images/torch/torch-revealed-first-slidecopy.png', 1: './images/torch/torch-explore.png', 2: './images/torch/torch-automate.png' },
+            1: { 0: './images/kenji-x1/plata.PNG', 1: './images/website_images/current-draw.jpg', 2: './images/website_images/lagos-techie-kenji-x1.jpg' },
+            2: { 0: './images/torch/TORCH_Mastcam_Render_6copy.png', 1: './images/torch/torch-cameras.png', 2: './images/torch/torch-communications-copy.png' },
+            3: { 0: './images/torch/left-mecha-arm-slide1-copy.png', 1: './images/torch/Left_Mecha_Arm_version1_10copy.PNG', 2: './video/arm_craning_1.gif' },
+            4: { 0: './images/torch/torch-payload.png', 1: './images/website_images/RaspberryPi_B+.jpg', 2: './images/torch/Baseboard_opened_Render_1.PNG' },
+            5: { 0: './video/kenji_positioning_2.gif', 1: './images/kenji-x1/Kenji-6.jpg', 2: './images/kenji-x1/Graph3.jpg' },
+            6: { 0: './images/torch/VR_Goggles_1.jpg', 1: './images/torch/Mixed_Reality_Goggles.jpg', 2: './images/website_images/Remote_Control.jpg' }
         }
     }
 
     if (slider.classList.contains('robo-drive-slider')) {
         slideImages = {
-            0: { 0: './images/kenji-x1/2.png', 1: './images/torch/Left_Mecha_Arm_version5.png', 2: './images/torch/Left_Mecha_Arm_version7.png' },
+            0: { 0: './images/kenji-x1/Baseboard_opened_v61_2.png', 1: './images/torch/Left_Mecha_Arm_version5.png', 2: './images/torch/Left_Mecha_Arm_version7.png' },
             1: { 0: '', 1: '', 2: '' },
             2: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
             3: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
@@ -100,17 +101,16 @@ function initMainSlider() {
         }
     }
 
-    if (slider.classList.contains('team-gallery')) {
+    if (slider.classList.contains('mecha-arm-slider')) {
         slideImages = {
-            0: { 0: ''},
-            1: { 0: ''},
-            2: { 0: '', 1: ''},
-            3: { 0: '', 1: ''},
-            4: { 0: '', 1: ''},
-            5: { 0: '', 1: ''}
+            0: { 0: './images/torch/Left_Mecha_Arm_version1_4cooopy.png', 1: './images/torch/arm_illustration-mecha-arm.jpg', 2: './video/right_mecha_arm.gif' },
+            1: { 0: './images/torch/robot-servo.png', 1: './images/website_images/IMG_1556.jpg', 2: './images/website_images/one.jpg' },
+            2: { 0: './video/arm_craning_3_small.gif', 1: './video/arm_craning_5.gif', 2: './video/arm_craning_2.gif' },
+            3: { 0: './images/torch/Left_Mecha_Arm_v1_2.png', 1: './video/torch-1-2-arms.gif', 2: './video/kenji_positioning_2.gif' },
+            4: { 0: './images/torch/', 1: './images/website_images/joystick.jpg', 2: './images/website_images/vr-googles.jpg' },
+            5: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' }
         }
     }
-
     function showSlide(index) {
         console.log('Showing slide:', index);
         slider.style.transform = `translateX(-${index * 100}%)`;
@@ -250,45 +250,51 @@ function initMainSlider() {
     }
 
     // Standalone Tabulation Block
-    function initStandaloneInfoBlock() {
-        const infoBlock = document.querySelector('.information_block_section.standalone');
-        if (!infoBlock) {
-            console.error("Standalone information block not found");
-            return;
-        }
+    // function initStandaloneInfoBlock() {
+    //     const infoBlock = document.querySelector('.information_block_section.standalone');
+    //     if (!infoBlock) {
+    //         console.error("Standalone information block not found");
+    //         return;
+    //     }
 
-        const tabs = infoBlock.querySelectorAll('.information_block_tab');
-        const tabContents = infoBlock.querySelectorAll('.information_block_tab_content');
-        const image = infoBlock.querySelector('.information_block_right img');
-        const images = [
-            './images/kenji-x1/DSC_0736_front_view_dark_2.jpg',
-            './images/kenji-x1/DSC_0763_smallsize.jpg',
-            './images/kenji-x1/pcb-stack-inside-robodrive.png'
-        ];
+    //     const tabs = infoBlock.querySelectorAll('.information_block_tab');
+    //     const tabContents = infoBlock.querySelectorAll('.information_block_tab_content');
+    //     const image = infoBlock.querySelector('.information_block_right img');
+    //     // const images = [
+    //     //     './images/torch/TORCH_gen2_Render_A27.png',
+    //     //     './images/kenji-x1/DSC_0763_smallsize.jpg',
+    //     //     './images/kenji-x1/pcb-stack-inside-robodrive.png'
+    //     // ];
 
-        function showTab(index) {
-            tabs.forEach((tab, i) => {
-                tab.classList.toggle('active', i === index);
-            });
-            tabContents.forEach((content, i) => {
-                content.style.display = i === index ? 'block' : 'none';
-            });
-            if (image && images[index]) {
-                image.src = images[index];
-            }
-        }
+    //     // const images = [
+    //     //     './images/torch/TORCH_gen2_Render_A27copy.png',
+    //     //     './images/torch/TORCH_gen1_mono3(3)copy.png',
+    //     //     './images/torch/TORCH_gen1_sidecut.png'
+    //     // ];
 
-        tabs.forEach((tab, index) => {
-            tab.addEventListener('click', () => showTab(index));
-        });
+    //     function showTab(index) {
+    //         tabs.forEach((tab, i) => {
+    //             tab.classList.toggle('active', i === index);
+    //         });
+    //         tabContents.forEach((content, i) => {
+    //             content.style.display = i === index ? 'block' : 'none';
+    //         });
+    //         if (image && images[index]) {
+    //             image.src = images[index];
+    //         }
+    //     }
 
-        // Show the first tab by default
-        showTab(0);
-    }
+    //     tabs.forEach((tab, index) => {
+    //         tab.addEventListener('click', () => showTab(index));
+    //     });
+
+    //     // Show the first tab by default
+    //     showTab(0);
+    // }
 
     // Initialize all components
     initScrollRevealSlider();
     initMainSlider();
     initGallerySlider();
-    initStandaloneInfoBlock();
+    // initStandaloneInfoBlock();
 });
