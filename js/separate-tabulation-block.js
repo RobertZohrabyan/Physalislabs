@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 'https://placehold.co/300x300'
             ],
             'torch': [
-                './images/torch/TORCH_gen2_Render_A27copy.png',
+                './images/torch/torch-inormation-block-pic-2.png',
             	'./images/torch/TORCH_gen1_mono3(3)copy.png',
-            	'./images/torch/TORCH_gen1_sidecut.png'
+            	'./images/torch/Drivetrain_Carrier_6.png'
             ],
             'robodrive': [
                 'https://placehold.co/400x400',
