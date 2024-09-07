@@ -92,12 +92,12 @@ function initMainSlider() {
 
     if (slider.classList.contains('robo-drive-slider')) {
         slideImages = {
-            0: { 0: './images/kenji-x1/Baseboard_opened_v61_2.png', 1: './images/torch/Left_Mecha_Arm_version5.png', 2: './images/torch/Left_Mecha_Arm_version7.png' },
-            1: { 0: '', 1: '', 2: '' },
-            2: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
-            3: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
-            4: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
-            5: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' }
+            0: { 0: './images/kenji-x1/Baseboard_opened_v61_2.png', 1: './images/robodrive/probe_stream_setup_2.gif', 2: './images/robodrive/robodrive-slider-farm.png' },
+            1: { 0: './images/robodrive/battery_pack.jpg', 1: './images/robodrive/roboDrive_Module.jpg', 2: '' },
+            2: { 0: './images/robodrive/robodrive-slder-3-field-tested.PNG', 1: './video/Kenji_X1_3.gif', 2: './video/robodrive-slider-3-3.gif' },
+            // 3: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
+            // 4: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
+            // 5: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' }
         }
     }
 
