@@ -51,6 +51,10 @@ ul {
     margin-right: 50px;
 }
 
+.desktop-main-menu.doc_menu {
+    margin-right: 130px;
+}
+
 .desktop-main-menu ul {
     display: flex;
 }
