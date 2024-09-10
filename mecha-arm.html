@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>PhysalisLabs-Mecha-Arm V.1</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/our-mission.css"><!-- Mecha Arm page block with tabs on the left -->
     <link rel="stylesheet" href="css/small-infographic-mecha-arm.css"><!-- Mecha Arm page small infographic -->
-    <link rel="stylesheet" href="css/big-infographic.css"><!-- Mecha Arm page big infographic -->
+    <link rel="stylesheet" href="css/big-infographic-mecha-arm.css"><!-- Mecha Arm page big infographic -->
     <link rel="stylesheet" href="css/sliders-and-tabulations.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script><!-- words writing animation on kenji page-->
     <script src="js/script.js"></script>
     <script src="js/text-animation.js"></script><!-- Mecha Arm rewriting animation -->
     <script type="text/javascript" src="js/our-mission.js"></script><!-- Mecha Arm page our mission -->
     <script type="text/javascript" src="js/small-infographic-mecha-arm.js"></script><!-- Mecha Arm page our mission -->
-    <script type="text/javascript" src="js/big-infographic.js"></script><!-- Mecha Arm page our mission -->
+    <script type="text/javascript" src="js/big-infographic-mecha-arm.js"></script><!-- Mecha Arm page our mission -->
     <script type="text/javascript" src="js/sliders-and-tabulations.js"></script>
     <script type="text/javascript" src="js/kenji-page-rewriting-animation.js"></script>
+    <script type="text/javascript" src="js/separate-tabulation-block.js"></script>
 </head>
 <body>
     <!-- Content goes here -->
@@ -330,7 +331,7 @@
                                     <div class="information_block_tabs">
                                         <div class="information_block_tab" data-tab="0">Foldable</div>
                                         <div class="separator"></div>
-                                        <div class="information_block_tab" data-tab="1">Grippers</div>
+                                        <div class="information_block_tab" data-tab="1">Gripper</div>
                                         <div class="separator"></div>
                                         <div class="information_block_tab" data-tab="2">Device Racks</div>
                                     </div>
@@ -659,17 +660,17 @@
         <div class="kenjix1_point_dot is-small right-4" data-callout="seven"><div class="pulse-animation"></div></div>
         <div class="kenjix1_point_dot is-small right-5" data-callout="eight"><div class="pulse-animation"></div></div>
         <!-- <div class="kenjix1_point_dot is-small left-4" data-callout="nine"><div class="pulse-animation"></div></div> -->
-    </div>
+    </div>big-infographic-mecha-arm-image.png
                 <!-- Kenji X1 information with tabulation section -->  
-    <section class="information_block_section standalone">
+    <section class="information_block_section standalone mecha-arm">
         <div class="information_block_left">
             <div class="information_block_left_content">
-                <h2>Kenji X1</h2>
+                <h2>Mecha-Arm</h2>
                 <h4>Sneak peek</h4>
                 <div class="information_block_tabs">
-                    <div class="information_block_tab" data-tab="0">Full assembly</div>
+                    <div class="information_block_tab" data-tab="0">Left Arm</div>
                     <div class="separator"></div>
-                    <div class="information_block_tab" data-tab="1">Externals</div>
+                    <div class="information_block_tab" data-tab="1">Right Arm</div>
                     <div class="separator"></div>
                     <div class="information_block_tab" data-tab="2">Internals</div>
                 </div>
@@ -742,11 +743,11 @@
           <div class="robot">
             <!-- Gear images -->
             <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-1" data-modal="modal-1">
-            <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-2" data-modal="modal-2">
+            <!-- <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-2" data-modal="modal-2"> -->
             <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-3" data-modal="modal-3">
-            <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-4" data-modal="modal-4">
+            <!-- <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-4" data-modal="modal-4"> -->
             <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-5" data-modal="modal-5">
-            <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-6" data-modal="modal-6">
+            <!-- <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-6" data-modal="modal-6"> -->
             <img src="./images/gear.png" alt="Cogwheel" class="cogwheel cogwheel-7" data-modal="modal-7">
 
 
@@ -759,15 +760,15 @@
                   <img src="./video/arm_craning_3_small.gif" alt="Image 1">
               </div>
             </div>
-            <div class="modal" id="modal-2">
+            <!-- <div class="modal" id="modal-2"> -->
               <!-- Modal content for dot 2 -->
-              <div class="modal-content">
+              <!-- <div class="modal-content">
                   <button class="close-modal">×</button>
                   <h2>Offroad Agility</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
                   <img src="./video/Kenji_X1_3.gif" alt="Image 1">
               </div>
-            </div>
+            </div> -->
             <div class="modal" id="modal-3">
               <!-- Modal content for dot 3 -->
               <div class="modal-content">
@@ -780,15 +781,15 @@
                 </video>
               </div>
             </div>
-            <div class="modal" id="modal-4">
+            <!-- <div class="modal" id="modal-4"> -->
               <!-- Modal content for dot 4 -->
               <!-- <img src="./images/kenji-x1/Kenji-6.jpg" alt="Image 4"> -->
-              <div class="modal-content">
+              <!-- <div class="modal-content">
                   <button class="close-modal">×</button>
                   <h2>Tracked Drivetrain</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ultrices ante. Quisque volutpat, erat ac viverra ultrices, mi mauris malesuada nulla, et auctor ante magna rutrum elit.</p>
                   <img src="./images/kenji-x1/driveterrain.JPG" alt="kenji x1 driveterrain">
-              </div>
+              </div> -->
             </div>
             <div class="modal" id="modal-5">
               <div class="modal-content">
@@ -828,27 +829,27 @@
             <img src="./images/mecha-arm.png" alt="Logo 1" class="infographic-logo">
             <p>KenjiX1 manipulators, (Left/Right), multiple degrees of freedom, several kilograms of load craning per arm.</p>
           </div>
-          <div class="info" data-dot="2"><span>2. Offroad Agility</span>
+          <!-- <div class="info" data-dot="2"><span>2. Offroad Agility</span>
             <img src="./images/offoad.png" alt="Logo 2" class="infographic-logo">
             <p>It can perform well in both situations outdoors where rough terrain and unpaved roads are expected, but also indoors.</p>
-          </div>
-          <div class="info" data-dot="3"><span>3. Robodrive console</span>
+          </div> -->
+          <div class="info" data-dot="3"><span>2. Robodrive console</span>
             <img src="./images/console.png" alt="Logo 3" class="infographic-logo">
             <p>Dragon separates from Falcon 9’s second stage and performs initial orbit activation and checkouts of propulsion, life support, and thermal control systems.</p>
           </div>
-          <div class="info" data-dot="4"><span>4. Tracked Drivetrain</span>
+          <!-- <div class="info" data-dot="4"><span>4. Tracked Drivetrain</span>
             <img src="./images/dc-motor.png" alt="Logo 4" class="infographic-logo">
             <p>Dragon establishes a communication link with the International PhysalisLabs Station and performs its final orbit raising delta-velocity burn.</p>
-          </div>
-          <div class="info" data-dot="5"><span>5. User-Programmable Movements</span>
+          </div> -->
+          <div class="info" data-dot="5"><span>3. User-Programmable Movements</span>
             <img src="./images/user-programmable-movements.png" alt="Logo 5" class="infographic-logo">
             <p>Dragon establishes relative navigation to the International Space Station and arrives along the docking axis, initiating an autonomous approach.</p>
           </div>
-          <div class="info" data-dot="6"><span>6. Mast 360° Continuous Rotation</span>
+          <!-- <div class="info" data-dot="6"><span>6. Mast 360° Continuous Rotation</span>
             <img src="./images/rotation-mast.png" alt="Logo 6" class="infographic-logo">
             <p>Dragon establishes relative navigation to the International Space Station and arrives along the docking axis, initiating an autonomous approach.</p>
-          </div>
-          <div class="info" data-dot="7"><span>7. Mecha-Arm Manipulators v.1</span>
+          </div> -->
+          <div class="info" data-dot="7"><span>4. Mecha-Arm Manipulators v.1</span>
             <img src="./images/mecha_arm_1.png" alt="Logo 7" class="infographic-logo">
             <p>Dragon establishes a communication link with the International Space Station and performs its final orbit raising delta-velocity burn.</p>
           </div>
@@ -859,7 +860,7 @@
                                 <!-- Section Our Mission -->
 <section class="kenji_mission_block_section">
     <div class="kenji_mission_block_left">
-        <img src="./images/kenji-x1/Kenji-9.jpg" alt="Image">
+        <img src="./images/mecha-arm/mission-mecha-arm.png" alt="Image">
     </div>
     <div class="kenji_mission_block_right">
         <h2>Kenji X1</h2>
@@ -1001,18 +1002,18 @@
         <!-- Gallery Slider -->
         <div class="gallery-slider down_slider">
             <div class="slide">
-                <img src="./images/kenji-x1/Kenji-1.jpg" alt="Slide 1">
+                <img src="./images/mecha-arm/mecha-arn-gallery-1.png" alt="Slide 1">
             </div>
             <div class="slide">
-                <img src="./images/kenji-x1/Kenji-2.jpg" alt="Slide 2">
+                <img src="./images/mecha-arm/mecha-arn-gallery-2.png" alt="Slide 2">
             </div>
             <div class="slide">
-                <img src="./images/kenji-x1/Kenji-3.jpg" alt="Slide 3">
+                <img src="./images/mecha-arm/mecha-arn-gallery-3.png" alt="Slide 3">
             </div>
             <div class="slide">
-                <img src="./images/kenji-x1/Kenji-4.jpg" alt="Slide 4">
+                <img src="./images/mecha-arm/mecha-arn-gallery-4.png" alt="Slide 4">
             </div>
-            <div class="slide">
+            <!-- <div class="slide">
                 <img src="./images/kenji-x1/Kenji-5.jpg" alt="Slide 5">
             </div>
             <div class="slide">
@@ -1029,7 +1030,7 @@
             </div>
             <div class="slide">
                 <img src="./images/kenji-x1/Kenji-10.jpg" alt="Slide 10">
-            </div>
+            </div> -->
             <!-- Add more slides as needed -->
             <div class="slide-controls-wrapper">
                 <button class="prev-slide">&#10094;</button>
