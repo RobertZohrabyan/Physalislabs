@@ -142,7 +142,7 @@ section {
 }
 
 .section-b {
-	background-image: url('../images/kenji-x1/2.png');
+	background-image: url('../images/2.png');
 }
 
 .section-c {
@@ -335,7 +335,7 @@ section {
 }
 
 .bg-robodrive {
-	background-image: url('../images/kenji-x1/plata.PNG');
+	background-image: url('../images/robodrive/Baseboard_opened_2024-Aug-20_06.png');
 }
 
 .bg-mecha-arm {
@@ -389,7 +389,7 @@ section {
         strokeDashoffset: 0;
     }
 }
-			/*Documentation*/
+/*Documentation*/
 #techdoc_navbar {
     position: fixed;
     overflow-y: scroll;
@@ -397,7 +397,7 @@ section {
     left: 0;
     padding: 30px;
     width: 300px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 220px);
     background-color: black;
     transition: 0.3s;
 }
@@ -413,14 +413,13 @@ section {
    display: inline-block !important; 
    margin-right: 3% !important;
 }
+
 /* Documentation Footer */
 footer {
   padding: 30px;
   text-align: center;
   color: #888;
 }
-
-
 
 /* Documentation Hamburger Menu Styles */
 .doc-hamburger {
@@ -484,6 +483,13 @@ footer {
     font-size: 16px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+
+.techdoc_nav_links:not(.collapsed) {
+    max-height: 1000px;
 }
 
 .techdoc_nav_link {
@@ -502,7 +508,7 @@ footer {
 .techdoc_main_doc {
     margin-left: 400px;
     margin-right: 20px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     overflow-y: scroll;
     scroll-behavior: smooth;
     margin-top: 100px;
@@ -543,6 +549,30 @@ code {
     font-size: 22px;
     font-family: 'Familjen Grotesk', sans-serif;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+}
+
+.techdoc_navbar_header h1::after {
+    content: '\276F'; /* Right-pointing arrow */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+.techdoc_navbar_header h1:not(.collapsed)::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.techdoc_navbar_header h1:hover::after {
+    color: #777;
 }
 
 .techdoc_navbar_header p {
@@ -574,6 +604,7 @@ code {
         transform: translateX(5px);
     }
 }
+
 /* Styles and blocks took from one of the git hub examples */
 /* strip is showing call to action block with button and text */
 
@@ -1467,14 +1498,6 @@ a {
     margin: 10px;
   }
 }
-
-
-
-
-
-
-
-
 
 /* Responsive Styles for blocks in index page with tables */
 @media (max-width: 960px) {
