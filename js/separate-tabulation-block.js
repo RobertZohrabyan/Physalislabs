@@ -31,14 +31,14 @@ document.addEventListener("DOMContentLoaded", function() {
             	'./images/torch/Drivetrain_Carrier_6.png'
             ],
             'robodrive': [
-                'https://placehold.co/400x400',
-                'https://placehold.co/300x300',
-                'https://placehold.co/200x200'
+                './images/robodrive/dc-motor-robodrive.jpg',
+                './images/robodrive/power-supply-robodrive.png',
+                './images/kenji-x1/IMG_2461.png'
             ],
             'mecha-arm': [
-                'https://placehold.co/600x600',
-                'https://placehold.co/700x700',
-                'https://placehold.co/150x150'
+                './images/mecha-arm/Kenji-12ax.png',
+                './images/mecha-arm/Kenji-12x.png',
+                './images/mecha-arm/internals-mecha-arm.png'
             ]
             // Add image arrays for other pages if needed
         };
