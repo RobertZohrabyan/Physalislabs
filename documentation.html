@@ -314,7 +314,6 @@
         </footer> -->
 </div>
 <script>
-
     const docMenuBtn = document.getElementById('doc-menu-btn');
     const techdocNavbar = document.getElementById('techdoc_navbar');
 
@@ -335,6 +334,27 @@
     } else {
         console.error('Documentation menu elements not found');
     }
+
+    // Modified code for collapsible sections
+const headers = document.querySelectorAll('.techdoc_navbar_header h1');
+
+headers.forEach(header => {
+    const links = header.closest('.techdoc_navbar_header').nextElementSibling;
+    
+    // Initially collapse all sections
+    header.classList.add('collapsed');
+    if (links && links.classList.contains('techdoc_nav_links')) {
+        links.classList.add('collapsed');
+    }
+    
+    header.addEventListener('click', function() {
+        this.classList.toggle('collapsed');
+        if (links && links.classList.contains('techdoc_nav_links')) {
+            links.classList.toggle('collapsed');
+        }
+    });
+});
 </script>
+
 </body>
 </html>
