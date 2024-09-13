@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>PhysalisLabs-Article</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -16,32 +16,42 @@
 <body>
     <!-- Content goes here -->
     <div id="overlay"></div>
-    <div id="mobile-menu" class="mobile-main-menu"><!-- mobile menu -->
+    <div id="mobile-menu" class="mobile-main-menu">
         <ul>
-            <li><a href="../kenji-x1.html">Kenji X1</a></li>
-            <li><a href="../geo-lab.html">Geo-Lab</a></li>
+            <li class="has-submenu">
+                <a href="#">Projects<span class="submenu-icon"></span></a>
+                <ul class="submenu">
+                    <li><a href="../kenji-x1.html">Kenji X1</a></li>
+                    <li><a href="../geo-lab.html">Geo-Lab</a></li>
+                    <li><a href="../torch.html">Torch</a></li>
+                </ul>
+            </li>
             <li><a href="../documentation.html">Documentation</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
             <li><a href="../blog.html">Blog</a></li>
             <li><a href="../team.html">Team</a></li>
             <li><a href="../contact-us.html">Contact</a></li>
             <li><a href="../shop.html">Shop</a></li>
-            <li class="mobile-only"><a href="#">Project 1</a></li>
-            <li class="mobile-only"><a href="#">Project 2</a></li>
-            <li class="mobile-only"><a href="#">Project 3</a></li>
-            <li class="mobile-only"><a href="#">Project 4</a></li>
         </ul>
     </div>
-    <header class="main-header"><!-- main header -->
+    <header class="main-header">
         <div class="logo">
-            <a href="../index.html">
+            <a href="index.html">
                 <img src="../images/logo.png" alt="PhysalisLabs" />
             </a>
         </div>
         <nav class="desktop-main-menu">
             <ul>
-                <li><a href="../kenji-x1.html">Kenji X1</a></li>
-                <li><a href="../geo-lab.html">Geo-Lab</a></li>
+                <li class="has-submenu">
+                    <a href="#">Projects<span class="submenu-icon"></span></a>
+                    <ul class="submenu">
+                        <li><a href="../kenji-x1.html">Kenji X1</a></li>
+                        <li><a href="../geo-lab.html">Geo-Lab</a></li>
+                        <li><a href="../torch.html">Torch</a></li>
+                    </ul>
+                </li>
                 <li><a href="../documentation.html">Documentation</a></li> 
+                <li><a href="../faq.html">FAQ</a></li>
                 <li><a href="../blog.html">Blog</a></li>
                 <li><a href="../team.html">Team</a></li>
                 <li><a href="../contact-us.html">Contact</a></li>
@@ -49,8 +59,6 @@
             </ul>
         </nav>
     </header>
-    
-    <!-- Hamburger Menu -->
     <button id="menu-btn" class="hamburger" type="button">
         <span class="hamburger-top"></span>
         <span class="hamburger-middle"></span>
@@ -59,7 +67,7 @@
                 <!-- Article content -->
     <main>
         <article>
-            <h1 class="article-title">Kenji Vibration Scanning Instructable</h1>
+            <h1 class="article-title">Remote Data-Acqusition of the vibrations</h1>
             <p class="article-date">28.05.2022</p>
             <div class="article-content">
                 <p></p>
@@ -248,12 +256,12 @@
                 <p>But wait! … (°_°)…</p>
                 <p>This is not yet the end, this is just the beginning, and now with all this knowledge in your pocket you can apply the stuff you learned here to study other interesting things, excitation sources, get creative. Spending quite some of my time to create this instructable after a regular job, so there might be places where something is written goofy, or something I forgot to mention.</p>
                 <p>I hope that you liked this instructable and could learn something new from it.</p>
-                <h4>References:</h4>
+                <!-- <h4>References:</h4>
                 <ul>
                     <li><a href="https://www.amazon.com/AVR-Programming-Learning-Software-Technology/dp/1449355781" target="_blank">https://www.amazon.com/AVR-Programming-Learning-Software-Technology/dp/1449355781</a></li>
                     <li><a href="http://www2.me.rochester.edu/courses/ME443/Assignments/VibrationTesting.pdf" target="_blank">http://www2.me.rochester.edu/courses/ME443/Assignments/VibrationTesting.pdf</a></li>
                     <li><a href="http://robotroom.com/" target="_blank">http://robotroom.com/</a></li>
-                </ul>
+                </ul> -->
                 <div class="article-end-border"></div>
             </div>
         </article>
@@ -306,8 +314,8 @@
             <!--<li><a href="#">Instagram</a></li>
             <li><a href="#">FLickr</a></li>
             <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Suppliers</a></li>-->
+            <li><a href="#">Privacy</a></li>-->
+            <li><a href="suppliers.html">Suppliers</a></li>
         <ul>
     </footer>       
 </body>

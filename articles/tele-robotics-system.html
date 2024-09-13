@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>PhysalisLabs-Article</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -19,32 +19,42 @@
 <body>
     <!-- Content goes here -->
     <div id="overlay"></div>
-    <div id="mobile-menu" class="mobile-main-menu"><!-- mobile menu -->
+    <div id="mobile-menu" class="mobile-main-menu">
         <ul>
-            <li><a href="../kenji-x1.html">Kenji X1</a></li>
-            <li><a href="../geo-lab.html">Geo-Lab</a></li>
+            <li class="has-submenu">
+                <a href="#">Projects<span class="submenu-icon"></span></a>
+                <ul class="submenu">
+                    <li><a href="../kenji-x1.html">Kenji X1</a></li>
+                    <li><a href="../geo-lab.html">Geo-Lab</a></li>
+                    <li><a href="../torch.html">Torch</a></li>
+                </ul>
+            </li>
             <li><a href="../documentation.html">Documentation</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
             <li><a href="../blog.html">Blog</a></li>
             <li><a href="../team.html">Team</a></li>
             <li><a href="../contact-us.html">Contact</a></li>
             <li><a href="../shop.html">Shop</a></li>
-            <li class="mobile-only"><a href="#">Project 1</a></li>
-            <li class="mobile-only"><a href="#">Project 2</a></li>
-            <li class="mobile-only"><a href="#">Project 3</a></li>
-            <li class="mobile-only"><a href="#">Project 4</a></li>
         </ul>
     </div>
-    <header class="main-header"><!-- main header -->
+    <header class="main-header">
         <div class="logo">
-            <a href="../index.html">
+            <a href="index.html">
                 <img src="../images/logo.png" alt="PhysalisLabs" />
             </a>
         </div>
         <nav class="desktop-main-menu">
             <ul>
-                <li><a href="../kenji-x1.html">Kenji X1</a></li>
-                <li><a href="../geo-lab.html">Geo-Lab</a></li>
+                <li class="has-submenu">
+                    <a href="#">Projects<span class="submenu-icon"></span></a>
+                    <ul class="submenu">
+                        <li><a href="../kenji-x1.html">Kenji X1</a></li>
+                        <li><a href="../geo-lab.html">Geo-Lab</a></li>
+                        <li><a href="../torch.html">Torch</a></li>
+                    </ul>
+                </li>
                 <li><a href="../documentation.html">Documentation</a></li> 
+                <li><a href="../faq.html">FAQ</a></li>
                 <li><a href="../blog.html">Blog</a></li>
                 <li><a href="../team.html">Team</a></li>
                 <li><a href="../contact-us.html">Contact</a></li>
@@ -52,8 +62,6 @@
             </ul>
         </nav>
     </header>
-    
-    <!-- Hamburger Menu -->
     <button id="menu-btn" class="hamburger" type="button">
         <span class="hamburger-top"></span>
         <span class="hamburger-middle"></span>
@@ -84,13 +92,13 @@
                     <li>Lab. plus real-life tested first prototype already exists.</li>
                     <li>Enabling access to tele-robotics affordable and safer</li>
                 </ul>
-                <h4>Partner with us, or just Get in Touch!</h4>
+                <!-- <h4>Partner with us, or just Get in Touch!</h4>
                 <p>Hans-Marchwitza-Ring 21. 14473 Potsdam</p>
                 <p>Physalis Labs</p>
                 <p>Your Co-Pilot in Automation and Tele-Robotics</p>
                 <p>Telefon: + (49) 176 870 952 92</p>
                 <p>Website: www.physalislabs.org</p>
-                <p>E-Mail: admin@physalislabs.org</p>           
+                <p>E-Mail: admin@physalislabs.org</p>  -->          
                 <div class="article-end-border"></div>
             </div>
         </article>
@@ -143,8 +151,8 @@
             <!--<li><a href="#">Instagram</a></li>
             <li><a href="#">FLickr</a></li>
             <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Suppliers</a></li>-->
+            <li><a href="#">Privacy</a></li>-->
+            <li><a href="suppliers.html">Suppliers</a></li>
         <ul>
     </footer>       
 </body>
