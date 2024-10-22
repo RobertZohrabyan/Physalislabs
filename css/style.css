@@ -331,7 +331,7 @@ section {
 }
 
 .bg-torch {
-	background-image: url('../images/torch/TORCH_gen2_Render_A20.png');
+	background-image: url('../images/torch/TORCH_gen2_Render_A3 (2).png');
 }
 
 .bg-robodrive {
@@ -1498,6 +1498,15 @@ a {
     margin: 10px;
   }
 }
+
+
+
+
+
+
+
+
+
 /* Responsive Styles for blocks in index page with tables */
 @media (max-width: 960px) {
     .section-table-table {
