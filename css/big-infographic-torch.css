@@ -277,7 +277,7 @@ body {
   font-weight: 200;
   margin-bottom: 15px;
   color: #333;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 .modal-content img, .modal-content video {
