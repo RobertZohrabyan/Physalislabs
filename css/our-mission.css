@@ -75,7 +75,7 @@ body {
     background: #000;
     font-family: 'Familjen Grotesk', sans-serif;
     max-width: 550px;
-    align-items: justify;
+    text-align: justify;
 }
 
 /* Styles for the tabs container */
