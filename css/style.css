@@ -1068,7 +1068,8 @@ section.footer-two {
 }
 
 .footer-two-inner p {
-    font-size: 12px;
+    /*font-size: 12px;*/
+    font: 14px/24px sans-serif;
     font-weight: 200;
     opacity: 0;
     transform: translateY(20px);

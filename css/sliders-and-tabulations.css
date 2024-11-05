@@ -288,7 +288,8 @@ body {
 
 /* Styles for the paragraph and table in tab content */
 .information_block_tab_content_text p {
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font: 14px/24px sans-serif;
     word-wrap: break-word;
     max-width: calc(100% - 80px); 
     margin-top: -40px;
@@ -476,7 +477,8 @@ body {
 
 .slide-info p {
     text-transform: none;
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font: 14px/24px sans-serif;
     margin: 0;
 }
 
@@ -519,3 +521,5 @@ body {
     height: auto;
     max-height: 100%;
 }
+
+
