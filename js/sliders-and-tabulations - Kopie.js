@@ -82,35 +82,69 @@ function initMainSlider() {
         slideImages = {
             0: { 0: './images/torch/torch-revealed-first-slidecopy.png', 1: './images/torch/torch-explore.png', 2: './images/torch/torch-automate.png' },
             1: { 0: './images/kenji-x1/plata.PNG', 1: './images/website_images/current-draw.jpg', 2: './images/website_images/lagos-techie-kenji-x1.jpg' },
-            2: { 0: './images/torch/TORCH_Mastcam_Render_6copy.png', 1: './images/torch/torch-cameras.png', 2: './images/torch/torch-communications-copy.png' },
-            3: { 0: './images/torch/left-mecha-arm-slide1-copy.png', 1: './images/torch/Left_Mecha_Arm_version1_10copy.PNG', 2: './video/arm_craning_1.gif' },
-            4: { 0: './images/torch/torch-payload.png', 1: './images/website_images/RaspberryPi_B+.jpg', 2: './images/torch/Baseboard_opened_Render_1.PNG' },
+            2: { 0: './images/torch/torch-mastcam-slider-2.png', 1: './images/torch/torch-cameras.png', 2: './images/torch/torch-communications.png' },
+            3: { 0: './images/torch/left-mecha-arm-slide1.png', 1: './images/torch/Left_Mecha_Arm_version1_10.PNG', 2: './video/arm_craning_1.gif' },
+            4: { 0: 'https://placehold.co/600x400', 1: './images/website_images/RaspberryPi_B+.jpg', 2: './images/website_images/roboDrive_Hardware_Enclosure.png' },
             5: { 0: './video/kenji_positioning_2.gif', 1: './images/kenji-x1/Kenji-6.jpg', 2: './images/kenji-x1/Graph3.jpg' },
-            6: { 0: './images/torch/vr-googles.jpg', 1: './images/torch/Mixed_Reality_Goggles.jpg', 2: './images/website_images/Remote_Control.jpg' }
+            6: { 0: './images/torch/VR_Goggles_1.jpg', 1: './images/torch/Mixed_Reality_Goggles.jpg', 2: './images/website_images/Remote_Control.jpg' }
         }
     }
 
     if (slider.classList.contains('robo-drive-slider')) {
         slideImages = {
-            0: { 0: './images/kenji-x1/Baseboard_opened_v61_2.png', 1: './images/robodrive/probe_stream_setup_2.gif', 2: './images/robodrive/robodrive-slider-farm.png' },
-            1: { 0: './images/robodrive/battery_pack.jpg', 1: './images/robodrive/roboDrive_Module.jpg', 2: '' },
-            2: { 0: './images/robodrive/robodrive-slder-3-field-tested.PNG', 1: './video/Kenji_X1_3.gif', 2: './video/robodrive-slider-3-3.gif' },
-            // 3: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
-            // 4: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
-            // 5: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' }
-        }
-    }
-
-    if (slider.classList.contains('mecha-arm-slider')) {
-        slideImages = {
-            0: { 0: './images/torch/Left_Mecha_Arm_version1_4cooopy.png', 1: './images/torch/arm_illustration-mecha-arm.jpg', 2: './video/right_mecha_arm.gif' },
-            1: { 0: './images/torch/robot-servo.png', 1: './images/website_images/IMG_1556.jpg', 2: './images/website_images/one.jpg' },
-            2: { 0: './video/arm_craning_3_small.gif', 1: './video/arm_craning_5.gif', 2: './video/arm_craning_2.gif' },
-            3: { 0: './images/mecha-arm/mecha-arm-slide-4-1.png', 1: './images/mecha-arm/mecha-arm-slide-4-2.png', 2: './video/kenji_positioning_2.gif' },
-            4: { 0: './images/torch/', 1: './images/website_images/joystick.jpg', 2: './images/website_images/vr-googles.jpg' },
+            0: { 0: './images/kenji-x1/Baseboard_opened_v61_2.png', 1: './images/torch/Left_Mecha_Arm_version5.png', 2: './images/torch/Left_Mecha_Arm_version7.png' },
+            1: { 0: '', 1: '', 2: '' },
+            2: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
+            3: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
+            4: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' },
             5: { 0: './images/torch/', 1: './images/torch/', 2: './images/torch/' }
         }
     }
+
+    if (slider.classList.contains('team-gallery')) {
+        slideImages = {
+            0: { 0: ''},
+            1: { 0: ''},
+            2: { 0: '', 1: ''},
+            3: { 0: '', 1: ''},
+            4: { 0: '', 1: ''},
+            5: { 0: '', 1: ''}
+        }
+    }
+
+    if (slider.classList.contains('geo-lab-gallery')) {
+        slideImages = {
+            0: { 0: ''},
+            1: { 0: ''},
+            2: { 0: '', 1: ''},
+            3: { 0: '', 1: ''},
+            4: { 0: '', 1: ''},
+            5: { 0: '', 1: ''}
+        }
+    }
+
+    if (slider.classList.contains('torch-gallery')) {
+        slideImages = {
+            0: { 0: ''},
+            1: { 0: ''},
+            2: { 0: '', 1: ''},
+            3: { 0: '', 1: ''},
+            4: { 0: '', 1: ''},
+            5: { 0: '', 1: ''}
+        }
+    }
+
+    if (slider.classList.contains('robo-drive-gallery')) {
+        slideImages = {
+            0: { 0: ''},
+            1: { 0: ''},
+            2: { 0: '', 1: ''},
+            3: { 0: '', 1: ''},
+            4: { 0: '', 1: ''},
+            5: { 0: '', 1: ''}
+        }
+    }
+
     function showSlide(index) {
         console.log('Showing slide:', index);
         slider.style.transform = `translateX(-${index * 100}%)`;
@@ -250,51 +284,51 @@ function initMainSlider() {
     }
 
     // Standalone Tabulation Block
-    // function initStandaloneInfoBlock() {
-    //     const infoBlock = document.querySelector('.information_block_section.standalone');
-    //     if (!infoBlock) {
-    //         console.error("Standalone information block not found");
-    //         return;
-    //     }
+    function initStandaloneInfoBlock() {
+        const infoBlock = document.querySelector('.information_block_section.standalone');
+        if (!infoBlock) {
+            console.error("Standalone information block not found");
+            return;
+        }
 
-    //     const tabs = infoBlock.querySelectorAll('.information_block_tab');
-    //     const tabContents = infoBlock.querySelectorAll('.information_block_tab_content');
-    //     const image = infoBlock.querySelector('.information_block_right img');
-    //     // const images = [
-    //     //     './images/torch/TORCH_gen2_Render_A27.png',
-    //     //     './images/kenji-x1/DSC_0763_smallsize.jpg',
-    //     //     './images/kenji-x1/pcb-stack-inside-robodrive.png'
-    //     // ];
+        const tabs = infoBlock.querySelectorAll('.information_block_tab');
+        const tabContents = infoBlock.querySelectorAll('.information_block_tab_content');
+        const image = infoBlock.querySelector('.information_block_right img');
+        // const images = [
+        //     './images/torch/TORCH_gen2_Render_A27.png',
+        //     './images/kenji-x1/DSC_0763_smallsize.jpg',
+        //     './images/kenji-x1/pcb-stack-inside-robodrive.png'
+        // ];
 
-    //     // const images = [
-    //     //     './images/torch/TORCH_gen2_Render_A27copy.png',
-    //     //     './images/torch/TORCH_gen1_mono3(3)copy.png',
-    //     //     './images/torch/TORCH_gen1_sidecut.png'
-    //     // ];
+        const images = [
+            './images/torch/TORCH_gen2_Render_A27copy.png',
+            './images/torch/TORCH_gen1_mono3(3)copy.png',
+            './images/torch/TORCH_gen1_sidecut.png'
+        ];
 
-    //     function showTab(index) {
-    //         tabs.forEach((tab, i) => {
-    //             tab.classList.toggle('active', i === index);
-    //         });
-    //         tabContents.forEach((content, i) => {
-    //             content.style.display = i === index ? 'block' : 'none';
-    //         });
-    //         if (image && images[index]) {
-    //             image.src = images[index];
-    //         }
-    //     }
+        function showTab(index) {
+            tabs.forEach((tab, i) => {
+                tab.classList.toggle('active', i === index);
+            });
+            tabContents.forEach((content, i) => {
+                content.style.display = i === index ? 'block' : 'none';
+            });
+            if (image && images[index]) {
+                image.src = images[index];
+            }
+        }
 
-    //     tabs.forEach((tab, index) => {
-    //         tab.addEventListener('click', () => showTab(index));
-    //     });
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => showTab(index));
+        });
 
-    //     // Show the first tab by default
-    //     showTab(0);
-    // }
+        // Show the first tab by default
+        showTab(0);
+    }
 
     // Initialize all components
     initScrollRevealSlider();
     initMainSlider();
     initGallerySlider();
-    // initStandaloneInfoBlock();
+    initStandaloneInfoBlock();
 });
