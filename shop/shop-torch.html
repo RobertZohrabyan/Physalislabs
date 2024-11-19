@@ -28,7 +28,7 @@
 </head>
 <body>
     <!-- Content goes here -->
-     <div id="overlay"></div>
+    <div id="overlay"></div>
     <div id="mobile-menu" class="mobile-main-menu">
         <ul>
             <li class="has-submenu">
@@ -90,26 +90,26 @@
             <div class="product-content">
                 <div class="product-left">
                     <div class="image-container">
-                        <img id="mainImage" src="../images/Kenji-2.jpg" alt="Product Image">
+                        <img id="mainImage" src="../images/torch/shop-torch-main.png" alt="Product Image">
                     </div>
                     <div class="thumbnails">
-                        <img src="../images/shop-1.png" data-src="../images/Kenji-2.jpg" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
-                        <img src="../images/shop-2.png" data-src="../images/Kenji-5.jpg" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
-                        <img src="../images/shop-3.png" data-src="../images/Kenji-9.jpg" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
-                        <img src="../images/shop-4.png" data-src="../images/Kenji-11.jpg" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
-                        <img src="../images/shop-5.png" data-src="../images/Kenji-6.jpg" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
+                        <img src="../images/torch/shop-torch-1.png" data-src="../images/torch/shop-torch-1.png" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
+                        <img src="../images/torch/shop-torch-2.png" data-src="../images/torch/shop-torch-2.png" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
+                        <img src="../images/torch/shop-torch-3.png" data-src="../images/torch/shop-torch-3.png" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
+                        <img src="../images/torch/shop-torch-4.png" data-src="../images/torch/shop-torch-4.png" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
+                        <img src="../images/torch/shop-torch-5.png" data-src="../images/torch/shop-torch-5.png" onclick="changeImage(this)" onmouseover="hoverChangeImage(this)">
                     </div>
                 </div>
                 <div class="product-right">
                     <div class="product-info">
-                        <h2>Kenji X1</h2>
-                        <h3>Developer Kit</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eu leo placerat, ac consequat purus eleifend.</p>
+                        <h2>Torch</h2>
+                        <h3>Versatile multistage vehicle and hardware platform</h3>
+                        <p>Tele-Operated Robotic Remote-Controlled Hardware (TORCH) is a versatile multistage vehicle and hardware platform designed and developed by F.A.R.M. engineers.</p>
                     </div>
                     <div class="btn-group btn_line">
                         <a href="#" class="btn_main shop-btn btn_yellow_primary top-down">
                             <div class="hover"></div>
-                            <span>Download</span>
+                            <span>Datasheet</span>
                         </a>
                         <a href="#" class="btn_main shop-btn btn_yellow_primary right-left">
                             <div class="hover"></div>
@@ -117,7 +117,7 @@
                         </a>
                         <a href="#" class="btn_main shop-btn btn_yellow_primary left-right">
                             <div class="hover"></div>
-                            <span>User Guide</span>
+                            <span>User Manual</span>
                         </a>
                     </div>
                     <!-- Start Form for "Buy Now" -->
@@ -128,21 +128,19 @@
                             <div class="option-group">
                                 <label for="baseStation">Battery Backpack</label>
                                 <select id="baseStation" name="baseStation">
-                                    <option value="none" selected>No BaseStation</option>
+                                    <option value="none" selected>No Battery</option>
                                     <option value="blueBoatBaseStation">Default Capacity - $100.00</option>
                                     <option value="redDragonCamera">Large Capacity  $200.00</option>
-                                    <option value="silverEagleCamera">Default Muster - $800.00</option>
                                 </select>
                             </div>
-
-                            <!-- Joystick Option -->
+                            <!-- Mast-Cam Module Option -->
                             <div class="option-group">
-                                <label for="payloadBracket">Joystick</label>
+                                <label for="payloadBracket">Mast-Cam Module</label>
                                 <select id="payloadBracket" name="payloadBracket">
-                                    <option value="none" selected>No Joystick</option>
-                                    <option value="standardJoystick">Standard Joystick - $100.00</option>
-                                    <option value="advancedJoystick">Advanced Joystick - $200.00</option>
-                                    <option value="proJoystick">Pro Joystick - $300.00</option>
+                                    <option value="none" selected>No Mast-Cam Module</option>
+                                    <option value="standardJoystick">Mast-Cam Module TR1 - $100.00</option>
+                                   <option value="standardJoystick">Mast-Cam Module TR2 - $150.00</option>
+                                   <option value="standardJoystick">Mast-Cam Module TR3 - $200.00</option>
                                 </select>
                             </div>
 
@@ -151,27 +149,33 @@
                                 <label for="controller">Controller</label>
                                 <select id="controller" name="controller">
                                     <option value="none" selected>No Controller</option>
-                                    <option value="joystick">Joystick Controller</option>
+                                    <option value="joystick">Robodrive</option>
                                 </select>
                             </div>
-
-                            <!-- Side Scan Option -->
+                            <!-- Payload -->
                             <div class="option-group">
-                                <label for="sideScan">Side Scan</label>
+                                <label for="sideScan">Payload Module</label>
                                 <select id="sideScan" name="sideScan">
-                                    <option value="none" selected>No Side Scan</option>
-                                    <option value="sideScanBasic">Side Scan Basic - $500.00</option>
-                                    <option value="sideScanAdvanced">Side Scan Advanced - $700.00</option>
-                                    <option value="sideScanPro">Side Scan Pro - $900.00</option>
+                                    <option value="none" selected>No Payload Module</option>
+                                    <option value="sideScanBasic">Small Payload Module Enclosure - $500.00</option>
+                                    <option value="sideScanAdvanced">Medium Payload Module Enclosure - $700.00</option>
+                                    <option value="sideScanPro">Big Payload Module Enclosure - $900.00</option>
+                                </select>
+                            </div>
+                            <!-- Mechanical Extension -->
+                            <div class="option-group">
+                                <label for="payloadBracket">Mechanical Extension</label>
+                                <select id="payloadBracket" name="payloadBracket">
+                                    <option value="none" selected>No Mechanical Extension</option>
+                                    <option value="standardJoystick">Mecha-Arm V.1 - $100.00</option>
                                 </select>
                             </div>
                         </div>
-
                         <!-- Price Info and Buy Now Links -->
                         <div class="price-info">
                             <div class="price-option">
                                 <h4>$100</h4>
-                                <p>Self-assembly kit</p>
+                                <p>Assembly kit</p>
                                 <div class="btn-group">
                                     <input type="hidden" name="product" value="Self-assembly kit">
                                     <input type="hidden" name="_gotcha" style="display:none !important">
@@ -187,7 +191,7 @@
 
                             <div class="price-option">
                                 <h4>$150</h4>
-                                <p>Assembled Product</p>
+                                <p>Assembled Vehicle</p>
                                 <div class="btn-group">
                                     <input type="hidden" name="product" value="Assembled Product">
                                     <a href="#" class="btn_main btn_yellow_primary top-down buy-link" data-product="Assembled Product">
@@ -199,10 +203,10 @@
                         </div>
                     </form>
                     <!-- End Form -->
-                    <div class="additional-info">
+                    <!-- <div class="additional-info">
                         <a href="#">Learn more</a>
                         <a href="#">Specifications</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -214,7 +218,7 @@
     <div class="additional-items-block">
         <div class="additional-items-block-content">
             <img src="https://placehold.co/400">
-            <h3>Battery</h3>
+            <h3>Battery Backpack</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <h6>$100.00</h6>
             <a href="#" class="btn_main btn_yellow_primary top-down">
@@ -224,7 +228,7 @@
         </div>
         <div class="additional-items-block-content">
             <img src="https://placehold.co/400">
-            <h3>Arm</h3>
+            <h3>Mast-Cam Module</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <h6>$130.00</h6>
             <a href="#" class="btn_main btn_yellow_primary bottom-up">
@@ -234,7 +238,7 @@
         </div>
         <div class="additional-items-block-content">
             <img src="https://placehold.co/400">
-            <h3>Caterpillar</h3>
+            <h3>Controller</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <h6>$70.00</h6>
             <a href="#" class="btn_main btn_yellow_primary bottom-up">
@@ -244,7 +248,17 @@
         </div>
         <div class="additional-items-block-content">
             <img src="https://placehold.co/400">
-            <h3>Anthena</h3>
+            <h3>Payload Module</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <h6>$200.00</h6>
+            <a href="#" class="btn_main btn_yellow_primary top-down">
+                <div class="hover"></div>
+                <span>Purchase</span>
+            </a>
+        </div>
+        <div class="additional-items-block-content">
+            <img src="https://placehold.co/400">
+            <h3>MEchanical Extension</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <h6>$200.00</h6>
             <a href="#" class="btn_main btn_yellow_primary top-down">
@@ -254,8 +268,7 @@
         </div>
     </div>      
     <!-- More Products part end -->
-
-    <section class="shop-pricing-section">
+    <!-- <section class="shop-pricing-section">
         <div class="shop-pricing">
             <div class="shop-pricing-row">
                 <div class="shop-pricing-column">
@@ -308,7 +321,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Footer -->
     <footer>
          <ul>
