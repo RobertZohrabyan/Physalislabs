@@ -1466,7 +1466,7 @@ a {
 /* Media queries */
 @media only screen and (max-width: 400px) {
   .our_suppliers_section {
-  	height: 72vh;/*height: 50vh;*/
+  	height: 75vh;/*height: 50vh;*/
   }	
 
   .our_suppliers_logo_row {
