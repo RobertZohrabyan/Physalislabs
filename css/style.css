@@ -1442,9 +1442,9 @@ a {
 .our_suppliers_logo_row {
 	display: flex;
 	justify-content: center;
-	/*margin-top: 20px;
+	margin-top: 20px;
 	margin-bottom: 50px;
-	margin-left: 20px;*/
+	margin-left: 20px;
 }
 
 .our_suppliers_logo_row a {
@@ -1466,7 +1466,7 @@ a {
 /* Media queries */
 @media only screen and (max-width: 400px) {
   .our_suppliers_section {
-  	height: 75vh;/*height: 50vh;*/
+  	height: 72vh;/*height: 50vh;*/
   }	
 
   .our_suppliers_logo_row {
@@ -1479,7 +1479,7 @@ a {
     width: auto;
     height: auto;
     max-width: 100%;
-    margin: 10px 0;
+    margin: 5px 0;
   }
 }
 
