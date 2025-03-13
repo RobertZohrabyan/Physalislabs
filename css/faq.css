@@ -92,7 +92,7 @@ section.faq {
     color: rgba(255, 255, 255, .6);
     font-size: 14px;
     padding: 2rem;
-    text-transform: lowercase;
+    text-transform: none;
     text-align: justify;
 }
 
