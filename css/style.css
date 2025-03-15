@@ -1078,7 +1078,7 @@ section.footer-two {
     align-items: self-end;
     justify-content: center;
     position: relative;
-    height: 35vh;
+    /*height: 35vh;*/
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
