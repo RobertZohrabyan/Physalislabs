@@ -1,3 +1,7 @@
+section {
+  text-transform: none;
+}
+
 .supplier-info {
     max-width: 900px;
     padding: 62px;
