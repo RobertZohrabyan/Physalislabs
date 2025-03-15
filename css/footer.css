@@ -19,6 +19,10 @@ ul {
 	list-style: none;
 }
 
+section {
+  text-transform: none;
+}
+
 /* Footer */
 footer {
 	position: relative;
