@@ -1,0 +1,43 @@
+/*Preloader*/
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#preloader svg {
+  width: 300px;
+  height: auto;
+}
+
+.fill-rect {
+  animation: fillUp 3s ease-in-out forwards;
+}
+
+@keyframes fillUp {
+  from { y: 100%; height: 0%; }
+  to { y: 0%; height: 100%; }
+}
+
+#main-content {
+  display: none;
+}
+
+@keyframes stepFill {
+  0% { height: 0%; }
+  25% { height: 30%; }
+  50% { height: 50%; }
+  75% { height: 75%; }
+  100% { height: 100%; }
+}
+
+@keyframes rotateGear {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
